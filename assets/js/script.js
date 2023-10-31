@@ -36,3 +36,13 @@ var swiper = new Swiper(".mySwiper", {
         },
     },
 });
+
+document.querySelector(".nav-item.dropdownmy").addEventListener("click", () => {
+    document.querySelector("#shop-dropdown").classList.toggle("show")
+})
+document.querySelector(".nav-item.dropdownmy").addEventListener("mouseover", () => {
+    document.querySelector("#shop-dropdown").classList.toggle("show")
+})
+document.querySelector(".nav-item.dropdownmy").addEventListener("mouseout", () => {
+    document.querySelector("#shop-dropdown").classList.toggle("show")
+})
