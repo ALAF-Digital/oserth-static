@@ -1222,10 +1222,11 @@ footer .wave-line {
 .details .detail-side figure img {
     margin-bottom: 25px;
     object-fit: contain;
-    /* height: 120px; */
+    height: 100px;
+    width: 100px;
 }
 
-.details .proDetailImg img {
+.details .proDetailImg .promainImg img{
     object-fit: contain;
     max-height: 740px;
 }
@@ -1351,5 +1352,97 @@ background-color: #CDA17F;
     font-family: 'Eina2';
     font-size: 14px;
     color: #000;
+}
+
+.vegan-friendly{
+    padding: 25px 0 25px;
+    background-color: #F9F9F9;
+
+}
+.vegan-friendly .essence-friendly1{
+    width: 80%;
+}
+.vegan-friendly .essence-friendly1 h3{
+    font-size: 20px;
+    color: #555;
+}
+
+.Accordion-section{
+    padding: 25px 0 25px;
+    background: rgba(174, 218, 181, 0.20);
+}
+.Accordion-section .accordion-item{
+    background-color: transparent !important;
+    border: none !important;
+
+}
+.Accordion-section .accordion-item .accordion-button{
+    background-color: transparent !important;
+    box-shadow: none !important;
+    color: #555;
+    font-family: 'Eina2-light';
+    font-size: 25px;
+    text-transform: uppercase;
+}
+.Accordion-section .accordion-body{
+    padding: 25px 20px 25px;
+}
+.Accordion-section .accordion-body .row{
+    row-gap: 80px;
+}
+.Accordion-section .accordion-body h4{
+    color: #005674;
+    font-family: 'Eina2-light';
+    font-size: 35px;
+}
+.Accordion-section .accordion-body h3{
+    color: #005674;
+    font-family: 'Eina2';
+    font-size: 35px;
+}
+.Accordion-section .accordion-body p{
+    color: #000;
+    font-family: 'Eina2';
+    font-size: 18px;
+    padding-top: 10px;
+}
+/* .accordion-button::after {
+    content: '\2212';
+    float: right;
+}
+
+.accordion-button.collapsed::after {
+    content: '\002B';
+} */
+
+
+.product-panel{
+    background-color: #95BF9B;
+    padding: 25px 0 20px;
+}
+.product-panel .product-panel-text{
+    display: flex;
+padding: 70px 15px;
+flex-direction: column;
+gap: 30px;
+}
+.product-panel .product-panel-text h1{
+    color: var(--white);
+    font-family: 'Eina2-light';
+    font-size: 26px;
+}
+.product-panel .product-panel-text p{
+    font-family: 'Eina2';
+    font-size: 18px;
+    color: var(--white);
+}
+.product-panel .product-panel-images figure img{
+    width: 100px;
+    height: 100px;
+    object-fit: contain;
+    margin-bottom: 20px;
+}
+.product-panel .product-panel-images figure img:last-child {
+    margin-bottom: 0;
 }
 /* Product Details End */
