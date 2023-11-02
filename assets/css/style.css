@@ -12,14 +12,19 @@
 }
 
 @font-face {
-    font-family: 'Eina2';
+    font-family: 'Eina2semibold';
     src: url('../font/eina02semibold.ttf');
-    font-weight: 600;
+    /* font-weight: 600; */
+}
+
+@font-face {
+    font-family: 'Eina2-light';
+    src: url('../font/eina2-light.ttf');
 }
 
 @font-face {
     font-family: 'Eina3 Bold';
-    src: url('../font/Eina03-Bold.ttf');
+    src: url('../font/eina3-bold.ttf');
 }
 
 @media (min-width: 1600px) {
@@ -184,6 +189,8 @@ header {
     padding: 10px;
     display: grid;
     place-items: center;
+    font-family: 'Eina2';
+    font-size: 15px;
 }
 
 .main-navigation ul.more-links a:hover {
@@ -196,6 +203,7 @@ header {
     padding: 0;
     border: 0;
     box-shadow: 0 0 30px 0 rgba(0, 0, 0, 0.05);
+
 }
 
 #searchTop {
@@ -273,7 +281,7 @@ header {
     font-weight: 600;
     letter-spacing: 1.8px;
     text-transform: uppercase;
-    font-family: 'Eina2';
+    font-family: 'Eina2semibold';
     margin-bottom: 15px;
 }
 
@@ -428,6 +436,8 @@ header {
 
 .essence-head h1 {
     color: rgba(0, 85, 113, 1);
+    font-family: 'Eina2-light';
+    font-size: 65px;
 }
 
 .essence-friendly img {
@@ -443,7 +453,7 @@ header {
 }
 
 .essence-thumbnail img {
-    width: 470px;
+    /* width: 100%; */
     height: 540px;
 }
 
@@ -459,17 +469,7 @@ header {
 /* About Section End */
 
 /* Vegan Section */
-/* .cta-section {
-    background-image: var(--bgimg);
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position-x: center;
-    width: 100%;
-    height: 400px;
-    display: flex;
-    align-items: center;
-    padding: 13.375rem 0;
-} */
+
 .cta-section {
     background-image: var(--bgimg);
     background-size: cover;
@@ -545,11 +545,7 @@ header {
 /* Our Collection */
 .our-collection {
     padding: 160px 0 80px;
-    /* padding: 10px 3.375rem; */
     font-family: 'Eina2';
-    /* padding-bottom: 80px; */
-    /* text-align: center; */
-    /* padding-top: 9.875rem !important; */
     background: url(../images/wave.png);
     margin-top: -3.5rem;
     z-index: 1;
@@ -565,7 +561,7 @@ header {
 
 .collection-head p {
     color: #000;
-    margin-top: 40px;
+    margin-top: 30px;
     font-size: 20px;
 }
 
@@ -662,12 +658,31 @@ header {
     background-size: 100%;
 }
 
+.best-seller .seller-head h1 {
+    font-family: 'Eina2';
+    color: #005674;
+    font-size: 50px;
+    margin-bottom: 70px;
+}
+
 .best-seller .wave-line {
     position: absolute;
     top: 3rem;
     left: 50%;
     transform: translateX(-50%);
     width: 100%;
+}
+
+.seller-body h4 {
+    font-family: 'Eina2-light';
+    font-size: 30px;
+    color: #000;
+}
+
+.seller-body p {
+    font-family: 'Eina2';
+    font-size: 20px;
+    color: #000;
 }
 
 .best-seller .seller-card .seller-body .btn {
@@ -704,6 +719,18 @@ header {
     justify-content: center;
 }
 
+.seller-card .badge-group1 li {
+    border: 1px solid #6FCFEB;
+}
+
+.seller-card .badge-group2 li {
+    border: 1px solid #95BF9B;
+}
+
+.seller-card .badge-group3 li {
+    border: 1px solid #DAAED8;
+}
+
 .seller-card .badge-group li p {
     font-size: 12px;
     font-family: 'Eina2';
@@ -725,6 +752,10 @@ header {
     color: #595B60;
 }
 
+.seller-card .badge-group2 li.bg {
+    background: rgba(149, 191, 155, 0.20)
+}
+
 /* .seller-card figure svg {
     position: absolute;
     top: 50%;
@@ -732,9 +763,9 @@ header {
     transform: translate(-50%, -50%);
     z-index: -1;
 } */
-.seller-card {
+/* .seller-card {
     height: 600px;
-}
+} */
 
 .seller-card img {
     max-height: 360px;
@@ -825,9 +856,7 @@ header {
     z-index: 1;
 }
 
-/* .circle-images .container-fluid {
-    margin-bottom: 40px;
-} */
+
 .circleimage {
     display: flex;
     align-items: center;
@@ -850,11 +879,12 @@ header {
 .circleimage li:nth-child(even) img {
     width: 85%;
 }
-.circleimage li:last-child img{
-height: 200px;
-border-radius: 0%;
-width: 15px;
-margin-left: 10px;
+
+.circleimage li:last-child img {
+    height: 200px;
+    border-radius: 0%;
+    width: 15px;
+    margin-left: 10px;
 }
 
 .circle-images .wave-line {
@@ -880,46 +910,38 @@ margin-left: 10px;
 .Inspiration .head h1 {
     color: #005674;
     margin-bottom: 40px;
+    font-family: 'Eina2-light';
+    font-size: 55px;
 }
 
 .Inspiration .head a {
     color: #000;
     font-size: 20px;
+    font-family: 'Eina2';
 }
 
-.Inspiration .insImg:nth-child(1) img {
-    border-radius: 20px;
-    height: 250px;
-    width: 230px;
+.Inspiration-content .instimages {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
 }
 
-.Inspiration .insImg1:nth-child(2) img {
+.Inspiration-content .instimages li img {
     border-radius: 20px;
-    height: 300px;
-    width: 230px;
+    width: 100%;
+    /* aspect-ratio: 1/1; */
+    height: 200px;
+    object-fit: cover;
 }
 
-.Inspiration .insImg2:nth-child(3) img {
-    border-radius: 20px;
-    height: 250px;
-    width: 230px;
-}
-
-.Inspiration .insImg3:nth-child(4) img {
-    border-radius: 20px;
-    height: 300px;
-    width: 230px;
-}
-
-.Inspiration .insImg4:nth-child(5) img {
-    border-radius: 20px;
-    height: 250px;
-    width: 230px;
+.Inspiration-content .instimages li:nth-child(even) img {
+    width: 100%;
+    height: 260px;
 }
 
 .Inspiration-content {
     margin-top: 40px;
-
 }
 
 /* Inspiration End */
@@ -941,12 +963,26 @@ margin-left: 10px;
     padding: 13.375rem 0;
 }
 
+
+.join-oserth::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(225deg, #000 0%, rgba(0, 0, 0, 0.00) 60.5%);
+    z-index: 0;
+}
+
 .join-oserth .join-content {
     display: flex;
     flex-direction: column;
     align-items: end;
     text-align: end;
     gap: 2.125rem;
+    position: relative;
+    z-index: 1;
 }
 
 .join-oserth .join-content h3 {
@@ -966,6 +1002,8 @@ margin-left: 10px;
     border-radius: 0;
     background-color: transparent !important;
     border: 1px solid var(--white) !important;
+    color-scheme: light;
+    color: var(--white) !important;
 
 }
 
@@ -982,6 +1020,7 @@ margin-left: 10px;
     font-family: 'Eina2';
     font-size: 20px;
     color: #5CCBF2;
+    text-transform: uppercase;
 }
 
 /* Join Oserth End*/
@@ -991,11 +1030,12 @@ margin-left: 10px;
 footer {
     background-color: #333F4C;
     padding: 100px 0;
+    font-family: 'Eina2';
 }
 
 footer h4 {
     color: #FFF;
-    font-family: 'Eina2';
+    font-family: 'Eina2-light';
     font-size: 20px;
     font-weight: 400;
     margin-bottom: 30px;
@@ -1031,6 +1071,8 @@ footer .form .btn {
     font-size: 20px;
     padding: 22px 30px;
     color: var(--white);
+    display: flex;
+    align-items: center;
 }
 
 footer form label {
@@ -1072,8 +1114,242 @@ footer form label {
     white-space: nowrap;
 }
 
+footer .wave-line {
+    position: absolute;
+    /* top: 0; */
+    /* bottom: 0; */
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    z-index: 1;
+}
+
+.footer-bottom {
+    position: relative;
+    z-index: 3;
+}
+
+.footer-payment p {
+    color: var(--white);
+    font-size: 15px;
+    text-transform: capitalize;
+}
+
+/* .footer-payment img{
+    width: 20vw;
+     max-width: 280px; 
+    height: 30px;
+} */
+.footer-payment figure img {
+    max-width: 30px;
+    height: 25px;
+    margin-right: 5px;
+    /* margin-right: 3px; */
+    /* margin: 0%;
+    padding: 0; */
+
+}
+
+/* Footer End */
+
+/* mobile */
+
 /* footer .row {
     gap: 2rem;
 } */
+@media (max-width:1400px) {
+    .circle-images {
+        /* margin-bottom: -4.5rem; */
+    }
 
-/* Footer End */
+    /* .footer-payment img{
+    max-width: 230px;
+    } */
+    footer .form .btn {
+        padding: 17px;
+    }
+
+    footer form label {
+        display: flex;
+        align-items: baseline;
+        gap: 14px;
+        font-size: 12px;
+        color: var(--white);
+    }
+
+}
+
+@media (max-width:1920px) {
+    .circle-images {
+        margin-bottom: -5.3rem;
+    }
+
+}
+
+/* mobile */
+
+
+/* Product Details */
+.details {
+    padding: 320px 0 60px;
+}
+
+.details .detail-head p {
+    font-family: 'Eina2-light';
+    font-size: 15px;
+    color: #000;
+    margin-right: 10px;
+}
+
+.details .detail-head i {
+    font-size: 10px;
+    margin-right: 10px;
+    color: #D9D9D9;
+}
+
+.details .detail-heading h3 {
+    font-family: 'Eina2-light';
+    font-size: 45px;
+    color: #005674;
+}
+
+.details .detail-heading p {
+    color: #000;
+    font-family: 'Eina2';
+    font-size: 24px;
+}
+
+.details .detail-side figure img {
+    margin-bottom: 25px;
+    object-fit: contain;
+    /* height: 120px; */
+}
+
+.details .proDetailImg img {
+    object-fit: contain;
+    max-height: 740px;
+}
+
+.details .proDetailImg .product-badge li {
+    width: 100px;
+    height: 100px;
+    border: 1px solid #95BF9B;
+}
+
+.details .proDetailImg .product-badge li p {
+    font-size: 18px;
+    font-family: 'Eina2-light';
+
+}
+
+.details .proDetailImg .product-badge li span {
+    font-size: 12px;
+    font-family: 'Eina2-light';
+
+}
+
+.details .proDetailImg .product-badge li.bg {
+    background: rgba(149, 191, 155, 0.10);
+}
+
+.details .detail-content {
+    display: flex;
+    /* height: 700px; */
+    padding: 10px 0px;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.detail-content .details-buttons button {
+    border: none;
+    background: #F1F1F1;
+    color: #000;
+    font-family: 'Eina2';
+    font-size: 15px;
+    padding: 7px 17px;
+}
+
+.detail-content .details-buttons button:hover {
+    background: #CDA17F;
+    color: var(--white);
+}
+
+.detail-content h3 {
+    font-family: 'Eina2-light';
+    font-size: 40px;
+    padding: 25px 0 25px;
+    color: #555;
+}
+
+.detail-content .review-icon a {
+    color: #CCC !important;
+    font-size: 19px;
+}
+
+.detail-content .review-icon p {
+    color: #CCC;
+    font-size: 17px;
+    font-family: 'Eina2';
+
+}
+
+.detail-content .review-content>:nth-child(1) {
+    font-family: 'Eina2';
+    font-size: 17px;
+    color: #000;
+    padding: 20px 0 20px;
+}
+
+.detail-content .review-content>:nth-child(3) {
+    padding: 20px 0 20px;
+}
+
+.detail-content .review-content strong {
+    font-size: 1rem;
+    font-family: 'Eina2semibold';
+    color: #555;
+    text-transform: uppercase;
+}
+
+.detail-content .review-content span {
+    font-size: 1rem;
+    font-family: 'Eina2';
+    color: #555;
+}
+
+.detail-content .review-content a {
+    padding: 14px 25px;
+    background-color: #F1F1F1;
+    color: #000;
+    font-family: 'Eina2';
+    font-size: 16px;
+ margin-right: 10px;
+
+}
+
+.detail-content .review-content button {
+    padding: 12px 55px;
+    border: none;
+    background-color: #005674;
+    color: var(--white);
+    font-family: 'Eina2';
+    font-size: 16px;
+}
+.detail-content .review-content button:hover {
+background-color: #CDA17F;
+}
+.detail-content .delivery{
+    padding: 20px 0 20px;
+}
+
+.detail-content .delivery p{
+    font-family: 'Eina2';
+    font-size: 14px;
+    color: #000;
+}
+.detail-content .purchase p{
+    font-family: 'Eina2';
+    font-size: 14px;
+    color: #000;
+}
+/* Product Details End */
