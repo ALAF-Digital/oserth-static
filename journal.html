@@ -1,0 +1,440 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Oserth Homepage</title>
+    <!-- Library CDN  -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/8.4.7/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" />
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+
+
+    <!-- SErach ARea  -->
+    <div class="offcanvas offcanvas-top" tabindex="-1" id="searchTop" aria-labelledby="searchTopLabel">
+        <div class="offcanvas-body">
+            <form>
+                <div class="input-group">
+                    <i class="fa-solid fa-magnifying-glass "></i>
+                    <input type="text" class="form-control" placeholder="SEARCH">
+                </div>
+                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </form>
+        </div>
+    </div>
+    <!-- search area end -->
+
+    <!-- header -->
+    <header>
+        <div class="top-bar">
+            <div class="container">
+                <p>Lörem ipsum exonomårar antejåktigt reaskapet. Diledes polingar pålogi, eftersom ultradobel.</p>
+            </div>
+        </div>
+        <div class="main-navigation">
+            <div class="container-fluid">
+                <ul class="social-link">
+                    <li>
+                        <a href="#">
+                            <i class="fa-brands fa-x-twitter"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="fa-brands fa-instagram"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="fa-brands fa-pinterest"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="fa-brands fa-tiktok"></i>
+                        </a>
+                    </li>
+                </ul>
+                <a href="index.html" class="navbar-brand">
+                    <img src="assets/images/headerlogo.svg" class="img-fluid" alt="">
+                </a>
+                <ul class="more-links">
+                    <li><a href="#">عربي</a></li>
+                    <li class=" dropdown">
+                        <a class="" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            USD
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">USD</a></li>
+                            <li><a class="dropdown-item" href="#">AED</a></li>
+                            <li><a class="dropdown-item" href="#">GBP</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#" type="button" data-bs-toggle="offcanvas" data-bs-target="#searchTop"
+                            aria-controls="searchTop"><i class="fa-solid fa-magnifying-glass"></i></a></li>
+                    <li><a href="#"><i class="fa-regular fa-user"></i></a></li>
+                    <li><a href="#"><i class="fa-solid fa-bag-shopping"></i></a></li>
+                </ul>
+            </div>
+        </div>
+        <nav class="navbar navbar-expand-md">
+            <div class="container">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav mx-auto">
+                        <li class="nav-item dropdownmy">
+                            <a class="nav-link" href="product-details.html">
+                                Shop
+                            </a>
+                        </li>
+                        <li class="nav-item active">
+                            <a class="nav-link" href="#">About us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Journal</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Ingredients</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Contact us</a>
+                        </li>
+                    </ul>
+                    <div class="shop-menu" id="shop-dropdown">
+                        <div class="container">
+                            <div class="row g-0 justify-content-between">
+                                <div class="col-lg-2 col-md-3">
+                                    <h4>Highlight</h4>
+                                    <ul>
+                                        <li><a href="#">All Products</a></li>
+                                        <li><a href="#">Best Sellers</a></li>
+                                        <li><a href="#">New Arrivals</a></li>
+                                    </ul>
+                                </div>
+                                <div class="col-lg-2 col-md-3">
+                                    <h4>Product Type</h4>
+                                    <ul>
+                                        <li><a href="#">Shampoo </a></li>
+                                        <li><a href="#">Hair Mask</a></li>
+                                        <li><a href="#">Leave-in</a></li>
+                                        <li><a href="#">Hair Oil</a></li>
+                                    </ul>
+                                </div>
+                                <div class="col-lg-2 col-md-3">
+                                    <h4>Collection</h4>
+                                    <ul>
+                                        <li><a href="#">Fortify</a></li>
+                                        <li><a href="#">Restore</a></li>
+                                        <li><a href="#">Smooth</a></li>
+                                        <li><a href="#">Volume</a></li>
+                                    </ul>
+                                </div>
+                                <div class="col-lg-2 col-md-3">
+                                    <h4>Hair Type</h4>
+                                    <ul>
+                                        <li><a href="#">Dry Hair</a></li>
+                                        <li><a href="#">Frizzy Hair</a></li>
+                                        <li><a href="#">Damaged Hair</a></li>
+                                        <li><a href="#">Oily & Greasy Hair</a></li>
+                                        <li><a href="#">Hair Loss </a></li>
+                                        <li><a href="#">Sensitive Scalp </a></li>
+                                        <li><a href="#">Oily or Dry Scalp </a></li>
+                                        <li><a href="#">Fine Thin Hair </a></li>
+                                        <li><a href="#">Flat Hair</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!-- header end -->
+
+    <!-- Journal -->
+
+    <section class="details journal">
+        <div class="container-fluid">
+            <div class="detail-head d-flex align-items-center ms-3">
+                <p>Home</p>
+                <i class="fa-solid fa-greater-than"></i>
+                <p>Journal</p>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="journal-heading text-center mt-3">
+                <h3>Journal</h3>
+                <p>For sensitive and dry scalp</p>
+            </div>
+            <!-- style="--bgimg:url(../images/jurnalbanner.svg)" -->
+            <div class="journal-mainImg">
+                <a href="#"> <img src="assets/images/jurnalbanner.svg" class="img-fluid" alt=""></a>
+                <div class="journal-mainText">
+                    <a href="#">
+                        <h3>Riv cookie. Trement man.</h3>
+                        <p>Trevis dekateligt. Gehivis dun. Pogenera donås. Ber bere. Gedat kontrar. Polys övakålogi.
+                            Lask
+                            beda. Fell tigon.</p>
+                    </a>
+                    <a href="#" class="journal-action">#Prosat didot.</a>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-lg-4">
+                    <div class="journal-card">
+                        <img src="assets/images/journalCard.png" class="img-fluid" alt="">
+                        <div class="joural-cardText">
+                            <h3>Duligt pultvätta. Pokanat autonigäsa.</h3>
+                            <a href="#" class="card-action">#Latren dörar.</a>
+                            <p>Kysade seling. Pokang religa. Koscheria. Sidende. Eren pokyr. Vist egosat. Dån. Tesuligt
+                                klimatflykting.</p> 
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4">
+                    <div class="journal-card">
+                        <img src="assets/images/journalCard1.png" class="img-fluid" alt="">
+                        <div class="joural-cardText">
+                            <h3>Intimitetskoordinator fimpomat, lavis. Olire begt, megarade.</h3>
+                            <a href="#" class="card-action">#Paranysk e-demokrati.</a>
+                            <p>Reng. Anas trehet. Grit trepåns. Hägt hösas. Våjesade pårar. Infrakakrock aras. Löpsedelsteater euronyngar. Trejyns exor.</p> 
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-sm-6 col-6">
+                    <div class="journal-card">
+                        <img src="assets/images/journalCard2.png" class="img-fluid" alt="">
+                        <div class="joural-cardText">
+                            <h3>Duligt pultvätta. Pokanat autonigäsa.</h3>
+                            <a href="#" class="card-action">Latren dörar.</a>
+                            <p>Kysade seling. Pokang religa. Koscheria. Sidende. Eren pokyr. Vist egosat. Dån. Tesuligt klimatflykting.</p> 
+                                
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-sm-6 col-6">
+                    <div class="journal-card">
+                        <img src="assets/images/journalCard3.png" class="img-fluid" alt="">
+                        <div class="joural-cardText">
+                            <h3>Ock pren plalig. Readoktig ande, nyngen.</h3>
+                            <a href="#" class="card-action">Doskade råpp.</a>
+                            <p>Medelsiv gaser. Dil paraligt. Ponde multidaned. Hungerpandemi menskopp. Speren luligt. Preniska afint. Däk heminina. Dekarovis valerad.</p> 
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-sm-6 col-6">
+                    <div class="journal-card">
+                        <img src="assets/images/JournalCard4.png" class="img-fluid" alt="">
+                        <div class="joural-cardText">
+                            <h3>Toliga prefyskapet. Pir kroling.</h3>
+                            <a href="#" class="card-action">Miligt multinest.</a>
+                            <p>Gygon nenar. Makroras mimogt. Onera. Epimov. Poktig prelåv. Krode tev. Teral. Megavalens astror.</p> 
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-sm-6 col-6">
+                    <div class="journal-card">
+                        <img src="assets/images/JounalCard5.png" class="img-fluid" alt="">
+                        <div class="joural-cardText">
+                            <h3>Bedere lanade, div. Såpod reneska.</h3>
+                            <a href="#" class="card-action">Lande.</a>
+                            <p>Betevis jätåvis. Jyde vövis. Krott stenomös. Ons. Kroska. Tånanas diatöbes. Beteendedesign dimisa. Soment töv.</p> 
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-sm-6 col-6">
+                    <div class="journal-card">
+                        <img src="assets/images/journalCard3.png" class="img-fluid" alt="">
+                        <div class="joural-cardText">
+                            <h3>Ock pren plalig. Readoktig ande, nyngen.</h3>
+                            <a href="#" class="card-action">Doskade råpp.</a>
+                            <p>Medelsiv gaser. Dil paraligt. Ponde multidaned. Hungerpandemi menskopp. Speren luligt. Preniska afint. Däk heminina. Dekarovis valerad.</p> 
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-sm-6 col-6">
+                    <div class="journal-card">
+                        <img src="assets/images/JournalCard4.png" class="img-fluid" alt="">
+                        <div class="joural-cardText">
+                            <h3>Toliga prefyskapet. Pir kroling.</h3>
+                            <a href="#" class="card-action">Miligt multinest.</a>
+                            <p>Gygon nenar. Makroras mimogt. Onera. Epimov. Poktig prelåv. Krode tev. Teral. Megavalens astror.</p> 
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-sm-6 col-6">
+                    <div class="journal-card">
+                        <img src="assets/images/JounalCard5.png" class="img-fluid" alt="">
+                        <div class="joural-cardText">
+                            <h3>Bedere lanade, div. Såpod reneska.</h3>
+                            <a href="#" class="card-action">Lande.</a>
+                            <p>Betevis jätåvis. Jyde vövis. Krott stenomös. Ons. Kroska. Tånanas diatöbes. Beteendedesign dimisa. Soment töv.</p> 
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-sm-6 col-6">
+                    <div class="journal-card">
+                        <img src="assets/images/journalCard3.png" class="img-fluid" alt="">
+                        <div class="joural-cardText">
+                            <h3>Ock pren plalig. Readoktig ande, nyngen.</h3>
+                            <a href="#" class="card-action">Doskade råpp.</a>
+                            <p>Medelsiv gaser. Dil paraligt. Ponde multidaned. Hungerpandemi menskopp. Speren luligt. Preniska afint. Däk heminina. Dekarovis valerad.</p> 
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-sm-6 col-6">
+                    <div class="journal-card">
+                        <img src="assets/images/JournalCard4.png" class="img-fluid" alt="">
+                        <div class="joural-cardText">
+                            <h3>Toliga prefyskapet. Pir kroling.</h3>
+                            <a href="#" class="card-action">Miligt multinest.</a>
+                            <p>Gygon nenar. Makroras mimogt. Onera. Epimov. Poktig prelåv. Krode tev. Teral. Megavalens astror.</p> 
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-sm-6 col-6">
+                    <div class="journal-card">
+                        <img src="assets/images/JounalCard5.png" class="img-fluid" alt="">
+                        <div class="joural-cardText">
+                            <h3>Bedere lanade, div. Såpod reneska.</h3>
+                            <a href="#" class="card-action">Lande.</a>
+                            <p>Betevis jätåvis. Jyde vövis. Krott stenomös. Ons. Kroska. Tånanas diatöbes. Beteendedesign dimisa. Soment töv.</p> 
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <img src="assets/images/Vector.png" class="img-fluid wave-line" alt="">
+    </section>
+    <!-- Journal End-->
+
+
+ <!-- join-oserth -->
+
+ <section class="join-oserth" style="--bgimg:url(../images/joinbanner.png) ;">
+
+    <div class="container-fluid">
+
+        <div class="join-content">
+            <h3>Join Oserth World</h3>
+            <p>Lörem ipsum nivining tresa exopåmin. Kad min i sott månade.</p>
+            <form>
+                <div class="join-input d-flex">
+                    <input type="text" class="text form-control" placeholder="Enter your email here" required>
+                    <button type="submit" class="d-flex  align-items-center">Submit <img
+                            src="assets/images/joinicon.png" class="ms-2 " alt=""></button>
+                </div>
+            </form>
+        </div>
+
+    </div>
+</section>
+
+<!-- join-oserth end-->
+
+
+    <!-- Footer -->
+
+    <footer>
+        <div class="container-fluid">
+            <div class="row  justify-content-between pb-3">
+                <div class="col-xl-2 col-lg-3">
+                    <a href="#" class="footerlogo"><img src="assets/images/footerlogo.png" class="img-fluid" alt=""></a>
+
+                </div>
+                <div class="col-xl-4 col-lg-5">
+                    <h4>Subscribe to our newsletter</h4>
+                    <form action="">
+                        <div class="form"><input type="text" class="form-control" placeholder="Enter your email here">
+                            <button class="btn">Submit <img src="assets/images/plane.png" class="ms-2" alt=""></button>
+                        </div>
+
+                        <label>
+                            <input type="checkbox"><span>By entering your email you confirm you have read the Privacy
+                                Policy
+                                and you agree to receive (just great) emails from Fler.</span>
+                        </label>
+                    </form>
+                </div>
+                <div class="col-xl-4 col-lg-4">
+                    <ul class="quicklink">
+                        <li><a href="#">About us</a></li>
+                        <li><a href="#">Shop</a></li>
+                        <li><a href="#">Journal</a></li>
+                        <li><a href="#">Ingredients</a></li>
+                        <li><a href="#">FAQ’s</a></li>
+                        <li><a href="#">Contact us</a></li>
+                        <li><a href="#">Login</a></li>
+                        <li><a href="#">Become a Distributor</a></li>
+                    </ul>
+                </div>
+            </div>
+            <img src="assets/images/footervector.png" class="img-fluid wave-line" alt="">
+
+
+            <div class="row footer-bottom justify-content-between mt-5">
+                <div class="col-xl-2 col-lg-3">
+                    <p class="copyright">© 2023 Oserth | All rights reserved</p>
+                </div>
+                <div class="col-xl-4 col-lg-5">
+                    <div class="footer-payment d-flex justify-content-between">
+                        <p>Secure payments</p>
+                       
+                        <figure class="d-flex justify-content-between align-items-center">
+                            <img src="assets/images/paymentimg.png" alt="">
+                            <img src="assets/images/payment1.png" alt="">
+                            <img src="assets/images/payment2.png" alt="">
+                            <img src="assets/images/payment3.png" alt="">
+                            <img src="assets/images/payment4.png" alt="">
+                            <img src="assets/images/payment5.png" alt="">
+                            <img src="assets/images/payment6.png" alt="">
+                        </figure>
+                    </div>
+                </div>
+                <div class="col-xl-4 col-lg-4">
+                    <ul class="termlinks">
+                        <li><a href="#">terms & conditions</a></li>
+                        <li><a href="#">privacy policy</a></li>
+                        <li><a href="#">cookie policy</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- Footer End -->
+
+</body>
+
+</html>
+<!-- Library CDN -->
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/8.4.7/swiper-bundle.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+<!-- Custom JS -->
+<script src="assets/js/script.js"></script>
