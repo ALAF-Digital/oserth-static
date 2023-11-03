@@ -1531,8 +1531,6 @@ footer .wave-line {
         color: var(--white);
     }
 
-}
-
 
 
 /* mobile */
@@ -1540,7 +1538,7 @@ footer .wave-line {
 
 /* Product Details */
 .details {
-    padding: 320px 0 60px;
+    padding: 320px 0 60px !important;
 }
 .details .detail-head{
     padding: 0 100px;
