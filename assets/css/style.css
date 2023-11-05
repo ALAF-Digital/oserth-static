@@ -726,7 +726,11 @@ header {
     object-fit: contain;
     max-height: 400px;
 }
-
+.collectionCard{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 .our-collection .slider .collectionCard .card-body {
     margin-top: 30px;
     text-align: center;
@@ -1354,7 +1358,7 @@ header {
     font-family: 'Eina2';
 }
 
-.join-input input {
+.join-input .form-control {
     padding: 1.3rem  6.7rem ;
     box-shadow: none !important;
     border-radius: 0;
@@ -1381,6 +1385,40 @@ header {
     text-transform: uppercase;
 }
 
+@media (max-width:767px) {
+
+    
+    
+    .join-oserth .join-content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 1rem;
+
+    }
+    
+    .join-oserth .join-content h3 {
+        font-size: 35px;
+    }
+    
+    .join-oserth .join-content p {
+        font-size: 13px;
+    }
+    
+    .join-input .form-control {
+        padding: 0.8rem 0.8rem;
+    }
+    
+    .join-input .form-control::placeholder {
+        font-size: 12px;
+    }
+    
+    .join-input button {
+        padding: 0px 13px;
+        font-size: 14px;
+    }
+}
 /* Join Oserth End*/
 
 
@@ -1502,33 +1540,95 @@ footer .wave-line {
     max-width: 30px;
     height: 25px;
     margin-right: 5px;
-    /* margin-right: 3px; */
-    /* margin: 0%;
-    padding: 0; */
 
+}
+footer .form .btn {
+    padding: 17px;
+}
+
+footer form label {
+    display: flex;
+    align-items: baseline;
+    gap: 14px;
+    font-size: 12px;
+    color: var(--white);
 }
 
 /* Footer End */
 
 /* mobile */
 
-/* footer .row {
-    gap: 2rem;
-} */
+@media (max-width:991px) {
+    footer .row {
+        gap: 2rem;
+    }
+    footer .footerlogo{
+        display: block !important;
+    }
+}
 
-    /* .footer-payment img{
-    max-width: 230px;
-    } */
-    footer .form .btn {
-        padding: 17px;
+
+@media (max-width:767px) {
+    
+    footer  {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    .quicklink{
+        text-align: start !important;
+    }
+    footer form label {
+        text-align: start !important;
+    }
+        .footer-payment  {
+            display: block !important;
+        }
+        .footer-payment figure img{
+       margin-top: 20px;
+        }
     }
 
+    @media (max-width:500px) {
+        footer .form .form-control {
+            flex: 1;
+            padding: 17px 10px;
+            border-radius: 0;
+            border: 0;
+            background-color: transparent !important;
+            box-shadow: none !important;
+            color-scheme: light;
+            color: var(--white) !important;
+            font-size: 12px;
+        }
+        footer h4 {
+            font-size: 16px;
+            margin-bottom: 20px;
+        }
+        
+        footer .form .btn {
+            padding: 30px;
+            font-size: 13px;
+            padding: 17px 7px  15px 7px;
+        
+    }
     footer form label {
-        display: flex;
-        align-items: baseline;
-        gap: 14px;
+        gap: 10px;
+        font-size: 10px;
+    }
+    .quicklink a {
         font-size: 12px;
-        color: var(--white);
+    }
+    .copyright {
+        font-size: 10px;
+    }
+    .footer-payment p {
+        font-size: 10px;
+    }
+    .termlinks a {
+        font-size: 9px;
+    }
     }
 
 
@@ -2088,7 +2188,7 @@ font-size: 1.05rem;
         z-index: 1;
     }
     .journal .journal-card h3{
-        font-size: 1.25rem;
+        font-size: 1rem;
         margin: 14px 0 24px;
     }
     .journal .journal-card p{
@@ -2106,3 +2206,558 @@ font-size: 1.05rem;
     }
 }
  
+
+/* Search */
+.search{
+   padding: 320px 0 280px; 
+   background-image: none;
+}
+.search-heading h3{
+    font-size: 65px !important;
+}
+.search-heading p{
+font-size: 15px !important;
+font-family: 'Eina2' !important;
+}
+.search .more-result{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.search .more-result .one{
+    background-color: #F1F1F1;
+    font-family: 'Eina2-light';
+    font-size: 18px;
+    color: #000;
+    padding: 4px 10px;
+}
+.search .more-result .result{
+    padding: 8px;
+    font-family: 'Eina2';
+    font-size: 13px;
+    color: #555;
+    background-color: #F1F1F1;
+}
+.search .wave-line{
+    display: none;
+}
+.search-bottom {
+    display: none !important;
+}
+
+@media (max-width:767px) {
+    .search{
+        padding: 320px 0 0px; 
+    }
+    .search .wave-line{
+        display: block;
+    }
+    .search-bottom {
+        display: block !important;
+    }
+    .journal {
+        background: url('../images/wavebg.png') no-repeat;
+        background-position: bottom center;
+        background-size: contain;
+        margin-bottom: -2rem;
+        z-index: 1;
+    }
+    .search .more-result{
+        display: none;
+    }
+}
+@media (max-width:425px) {
+    .journal {
+        background: url('../images/wavebg.png') no-repeat;
+        background-position: bottom center;
+        background-size: contain;
+        margin-bottom: -1rem;
+        z-index: 1;
+    }
+}
+/* Search End */
+
+
+
+/* Journal Details */
+
+.Journaldetails{
+    padding: 270px 0 250px;
+}
+.Journaldetails-banner{
+    background-image: var(--bgimg);
+    height: 800px;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+@media (max-width:1300px) {
+    .Journaldetails-banner{
+        background-image: var(--bgimg);
+        height: 800px;
+        background-size: cover;
+        width: 100%;
+        background-repeat: no-repeat;
+        background-position: center center;
+    }
+}
+.Journaldetails-content {
+    padding: 9.875rem 0 3rem;
+    background: url(../images/wave.png);
+    margin-top: -25rem;
+    z-index: 1;
+    background-repeat: no-repeat;
+    background-position-x: center;
+    z-index: 1;
+}
+.Journaldetails-content .detail-head{
+    padding: 0 100px;
+}
+@media (max-width:1400px) {
+    .Journaldetails-content .detail-head {
+        padding: 0 0;
+    }
+}
+.Journaldetails-content .detail-head p {
+    font-family: 'Eina2-light';
+    font-size: 15px;
+    color: #000;
+    margin-right: 10px;
+}
+
+.Journaldetails-content .detail-head i {
+    font-size: 10px;
+    margin-right: 10px;
+    color: #D9D9D9;
+}
+.journaldetail-heading h1{
+color: #000;
+font-family: 'Eina2-light';
+font-size: 45px;
+padding: 25px 0 50px;
+}
+.journaldetail-heading p{
+    color: #000;
+    font-family: 'Eina2';
+    font-size: 18px;
+}
+.journaldetail-Img{
+    background-image: var(--bgimg);
+    height: 600px;
+    width: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+.journalPara-section{
+    padding-top: 3rem;
+}
+.journal-para{
+    padding-bottom: 5rem;
+}
+.journalPara-section .journal-para h1{
+    color: #000;
+    font-family: 'Eina2-light';
+    font-size: 45px;
+    margin: 40px 0 40px;
+}
+.journalPara-section .journal-para p{
+    font-family: 'Eina2';
+    font-size: 20px;
+    color: #000;
+}
+.journalPara-section {
+    /* padding: 0 0 90px; */
+    background: url('../images/wavebg.png') no-repeat;
+    background-position: bottom center;
+    background-size: contain;
+    margin-bottom: -5rem;
+    z-index: 1;
+}
+.journaldetail-Img .wave-line {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    bottom: 0px;
+}
+@media (max-width:991px) {
+    .journalPara-section {
+        /* padding: 0 0 90px; */
+        background: url('../images/wavebg.png') no-repeat;
+        background-position: bottom center;
+        background-size: contain;
+        margin-bottom: -3rem;
+        z-index: 1;
+    }
+}
+@media (max-width:767px) {
+    .journalPara-section {
+        /* padding: 0 0 90px; */
+        background: url('../images/wavebg.png') no-repeat;
+        background-position: bottom center;
+        background-size: contain;
+        margin-bottom: -2rem;
+        z-index: 1;
+    }
+}
+@media (max-width:425px) {
+    .journalPara-section {
+        /* padding: 0 0 90px; */
+        background: url('../images/wavebg.png') no-repeat;
+        background-position: bottom center;
+        background-size: contain;
+        margin-bottom: -1rem;
+        z-index: 1;
+    }
+}
+/* Jounal Details End*/
+
+/* Product Page */
+.product {
+    background-image: var(--bgimg);
+    height: 700px;
+    width: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    /* background-position: center; */
+    position: relative;
+}
+.product .product-heading {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 35%;
+    text-align: center;
+}
+
+.product .product-heading h1{
+    color: #323E48;
+    font-family: 'flatline';
+    font-size: 40px;
+    padding: 60px 0 30px;
+}
+.product .product-heading p{
+    color: #323E48;
+    font-family: 'Eina2';
+    font-size: 20px;
+}
+.product-content{
+
+        padding: 9.875rem 0 3rem;
+        background: url(../images/wave.png);
+        margin-top: -10rem;
+        z-index: 2;
+        background-repeat: no-repeat;
+        background-position-x: center;
+        z-index: 2;
+}
+
+.details .detail-head{
+    padding: 0 100px;
+}
+@media (max-width:1400px) {
+    .product-content .detail-head {
+        padding: 0 0;
+    }
+}
+.product-content .detail-head p {
+    font-family: 'Eina2-light';
+    font-size: 15px;
+    color: #000;
+    margin-right: 10px;
+}
+
+.product-content .detail-head i {
+    font-size: 10px;
+    margin-right: 10px;
+    color: #D9D9D9;
+}
+@media (max-width:1300px) {
+    .product .product-heading {
+        width: 65%;
+    } 
+}
+.product-content .product-buttons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+margin-top: 50px;
+}
+
+.product-content .product-buttons a{
+    margin-right: 20px;
+    color: #000;
+    font-family: 'Eina2';
+    font-size: 19px;
+    background-color: #F1F1F1;
+    padding: 10px 20px;
+}
+.product-content .product-buttons a:hover{
+    color: var(--white);
+    background-color: #CDA17F;
+}
+.product-content .product-buttons button{
+    color: #000;
+    font-family: 'Eina2';
+    font-size: 19px;
+    background-color: #F1F1F1;
+    padding: 10px 20px;
+    box-shadow: none !important;
+    border: none;
+}
+.product-content .product-buttons button:hover{
+    color: var(--white);
+    background-color: #CDA17F;
+}
+.product-content .sortby{
+    display: flex;
+    justify-content: end;
+    margin-top: 30px;
+}
+.product-content .sortby a{
+    color: #000;
+    font-family: 'Eina2';
+    font-size: 15px;
+    background-color: #F1F1F1;
+    padding: 10px 20px;
+    text-align: end;
+}
+
+.product-seller{
+    padding: 60px 0 60px !important;
+}
+.product-card{
+    padding-bottom: 100px;
+}
+.product-seller{
+        background: url('../images/wavebg.png') no-repeat;
+        background-position: bottom center;
+        background-size: contain;
+        margin-bottom: -5rem;
+        z-index: 1;
+}
+@media (max-width:1024px) {
+    .product-seller{
+        background: url('../images/wavebg.png') no-repeat;
+        background-position: bottom center;
+        background-size: contain;
+        margin-bottom: -3rem;
+        z-index: 1;
+} 
+}
+@media (max-width:767px) {
+    .product-seller{
+        background: url('../images/wavebg.png') no-repeat;
+        background-position: bottom center;
+        background-size: contain;
+        margin-bottom: -2rem;
+        z-index: 1;
+} 
+}
+@media (max-width:425px) {
+    .product-seller{
+        background: url('../images/wavebg.png') no-repeat;
+        background-position: bottom center;
+        background-size: contain;
+        margin-bottom: -1rem;
+        z-index: 1;
+} 
+}
+
+@media (max-width: 1024px) {
+    .product-content .product-buttons {
+        flex-wrap: wrap;
+    }
+    
+    .product-content .product-buttons a {
+        margin-bottom: 10px;
+    }
+    
+}
+/* Product Page End */
+
+
+/* Login */
+.login{
+  padding: 270px 0 0;
+  display: flex;
+  /* height: 100vh; */
+}
+
+.login-content,
+.login-banner {
+    flex: 1; 
+}
+
+.login-bg {
+    background-color: #F1F1F1; 
+    height: 100vh;
+}
+
+.login-banner {
+    background: url('../images/loginbanner.png') center/cover no-repeat; 
+  height: 100vh;
+}
+@media (max-width:1300px) {
+    /* .login-bg {
+        background-color: #F1F1F1; 
+        height: 650px;
+    } */
+    
+   
+}
+.login-content{
+    padding: 100px 150px;
+}
+.login-content .login-heading h1{
+ font-family: 'Eina2-light';
+ font-size: 65px;
+ color: #005674;
+ margin-top: 50px;
+}
+.login-content .login-heading p{
+    color: rgba(85, 85, 85, 0.60);
+    font-family: 'Eina2';
+    font-size: 20px;
+    margin: 20px 0 50px;
+}
+.login-content .login-input .form-control{
+    padding: 20px  20px ;
+    box-shadow: none !important;
+    border-radius: 0% ;
+    border: none !important;
+    color: #555;
+    font-family: 'Eina2';
+    font-size: 20px;
+}
+.login-input form,a{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.login-input a {
+    text-align: right !important; 
+    margin-top: 30px;
+    text-decoration: underline; 
+    color: rgba(85, 85, 85, 0.60);
+    font-family: 'Eina2';
+    font-size: 20px;
+}
+
+.login-button {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.login-button button {
+    width: 100%;
+    margin-bottom: 30px; 
+}
+.login-button>:nth-child(1) {
+    padding: 20px; 
+    height: 80px;
+    background-color: #005674;
+    border: none;
+    color: var(--white);
+    font-family: 'Eina2';
+    font-size: 20px;
+}
+.login-button>:nth-child(2) {
+    padding: 20px 30px;
+    background: #405992;
+    border: none;
+    color: var(--white);
+    font-family: 'Eina2';
+    font-size: 20px;
+}
+.login-button>:nth-child(3) {
+    color: #000;
+    font-family: 'Eina2';
+    font-size: 20px;
+}
+.login-button .sign{
+    display: flex;
+    align-items: center;
+   justify-content: center;
+   font-family: 'Eina2';
+   font-size: 20px;
+}
+.login-button a {
+   color: #000;
+   font-family: 'Eina2semibold';
+font-size: 20px;
+margin-left: 6px;
+}
+/* Login End */
+
+/* Add this media query for laptops */
+@media (max-width: 1440px) {
+    
+
+    .login-content,
+    .login-banner {
+        width: 100%; 
+    }
+
+    .login-bg,
+    .login-banner {
+        height: 100vh ; 
+    }
+
+
+    .login-content {
+        padding: 50px; /* Adjust padding for content */
+    }
+
+    .login-content .login-heading h1 {
+        font-size: 40px; /* Adjust font size for heading */
+        margin-top: 0px;
+    }
+
+    .login-content .login-heading p {
+        font-size: 16px; /* Adjust font size for paragraph */
+        margin: 10px 0 20px;
+    }
+
+    .login-content .login-input .form-control {
+        padding: 15px; /* Adjust padding for form inputs */
+        font-size: 16px; /* Adjust font size for form inputs */
+    }
+
+    .login-input form,
+    .login-input a {
+        gap: 15px; /* Adjust the gap between form elements */
+    }
+
+    .login-input a {
+        margin-top: 15px; /* Adjust margin for the "Forgot Password" link */
+    }
+
+    .login-button {
+        margin-top: 15px; /* Adjust margin for the button section */
+    }
+
+    .login-button button {
+        padding: 15px !important; /* Adjust padding for buttons */
+        font-size: 16px; /* Adjust font size for buttons */
+        margin-bottom: 15px; /* Adjust margin between buttons */
+    }
+    .login-button>:nth-child(1) {
+        padding: 15px; 
+        height: 60px;
+        background-color: #005674;
+        border: none;
+        color: var(--white);
+        font-family: 'Eina2';
+        font-size: 20px;
+    }
+
+    .login-button .sign,
+    .login-button a {
+        font-size: 16px; /* Adjust font size for text links */
+    }
+}
