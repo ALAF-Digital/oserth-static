@@ -183,7 +183,7 @@
             </div>
 
             <div class="row mt-5">
-                <div class="col-lg-2 ">
+                <div class="col-lg-1 ">
                     <div class="detail-side">
                         <figure>
                             <a href="#"> <img src="assets/images/productview.png" alt=""></a>
@@ -197,7 +197,7 @@
                     </div>
                 </div>
 
-                <div class="col-lg-6">
+                <div class="col-lg-7">
                     <div class="seller-card proDetailImg ">
                         <figure>
                             <div class="promainImg">
@@ -246,9 +246,10 @@
                             <p><strong>HAIR TYPE:</strong> <span>Straight, Wavy, Curly, Color-Treated</span></p>
                             <p><strong>RESULTS:</strong><span> Perfectly cleansed hair with weightless
                                     body, bounce, and shine</span></p>
-
-                            <a href="#">+ 01 -</a>
-                            <button>Add to Cart <i class="fa-solid fa-bag-shopping ms-1"></i></button>
+                            <div class="detail-action">
+                                <a href="#">+ 01 -</a>
+                                <button>Add to Cart <i class="fa-solid fa-bag-shopping ms-1"></i></button>
+                            </div>
                             <div class="delivery d-flex align-items-center">
                                 <img src="assets/images/truck.png" class="img-fluid me-1" alt="">
                                 <p>Spedizione gratuita sopra i 35 AED, altrimenti 3,90 AED</p>
@@ -323,7 +324,7 @@
                         </h2>
                         <div id="flush-collapseOne" class="accordion-collapse collapse show"
                             aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
-                            <div class="accordion-body" >
+                            <div class="accordion-body">
 
                                 <div class="accordion-content">
                                     <div class="row">
@@ -486,38 +487,40 @@
 
     </section>
 
-    <section class="product-panel">
-        <div class="container-fluid">
-            <div class="row">
-                <div class="col-lg-6">
-                    <div class="product-panel-text">
-                        <h1>HOW TO USE</h1>
-                        <p>Moisturizing and conditioning shampoo for dry, brittle, and frizzy hair. With active formula
-                            of calendula oil and marula oil, leaves your hair feeling soft, silky, hydrated and full of
-                            beautiful shine. Use: Apply on wet hair and massage in. Rinse thoroughly and repeat.
-                            Warnings: Keep out of reach of children. Avoid contact with eyes. Wash immediately in case
-                            of contact. Keep in cool dry place away from sunlight. External use.</p>
-                    </div>
+    <section class="productBGsection">
+        <div class="product-panel col-7">
+            <div class="productcontent">
+                <div class="product-panel-text">
+                    <h1>HOW TO USE</h1>
+                    <p>Moisturizing and conditioning shampoo for dry, brittle, and frizzy hair. With active
+                        formula
+                        of calendula oil and marula oil, leaves your hair feeling soft, silky, hydrated and full
+                        of
+                        beautiful shine. Use: Apply on wet hair and massage in. Rinse thoroughly and repeat.
+                        Warnings: Keep out of reach of children. Avoid contact with eyes. Wash immediately in
+                        case
+                        of contact. Keep in cool dry place away from sunlight. External use.</p>
                 </div>
-                <div class="col-lg-2">
-                    <div class="product-panel-images">
-                        <figure>
-                            <img src="assets/images/productpanel.png" alt="">
-                            <img src="assets/images/productpanel1.png" alt="">
-                            <img src="assets/images/productpanel2.png" alt="">
-                            <img src="assets/images/productpanel3.png" alt="">
-                        </figure>
-                    </div>
+                <div class="product-panel-images">
+                    <figure>
+                        <img src="assets/images/productpanel.png" alt="">
+                        <img src="assets/images/productpanel1.png" alt="">
+                        <img src="assets/images/productpanel2.png" alt="">
+                        <img src="assets/images/productpanel3.png" alt="">
+                    </figure>
                 </div>
-
             </div>
+        </div>
+
+        <div class="proPanelBg col-5" style="--bgimg:url(../images/prodetailsbg.png)">
+
         </div>
 
     </section>
 
 
-     <!-- Best Seller -->
-     <section class="best-seller product-related">
+    <!-- Best Seller -->
+    <section class="best-seller product-related">
         <div class="container-fluid">
             <div class="seller-head text-center ">
                 <h1>Related Products</h1>
@@ -529,8 +532,8 @@
                         <!-- style="--bg:#E9D69E;"  -->
                         <figure>
                             <div class="productImg">
-                            <img src="assets/images/homeproduct.png" class="img-fluid" alt="">
-                        </div>
+                                <img src="assets/images/homeproduct.png" class="img-fluid" alt="">
+                            </div>
                             <!-- <svg xmlns="http://www.w3.org/2000/svg" width="194" height="176" viewBox="0 0 194 176"
                                 fill="none">
                                 <path fill-rule="evenodd" clip-rule="evenodd"
