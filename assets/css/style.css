@@ -2804,7 +2804,8 @@ margin-left: 6px;
     background-image: var(--bgimg);
     width: 100%;
     max-height: 700px;
-    min-height: 400px;
+    min-height: 550px;
+    background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     position: relative;
@@ -3027,6 +3028,9 @@ margin-left: 20px;
     z-index: 1;
 } */
 
+
+
+
 .cart-product{
     background-color: #F1F1F1;
     background-image: none;
@@ -3217,3 +3221,258 @@ margin-left: 20px;
 
 
 /* My Cart End */
+
+
+
+/* Thank You */
+.thankcontent{
+      /* padding: 0 0 90px; */
+    background: url('../images/thankwave.png') no-repeat;
+    padding: 13.875rem 0 5rem;
+    margin-top: -23rem;
+    background-repeat: no-repeat;
+    background-position-x: center;
+    z-index: 1;
+    position: relative;
+}
+.thank-details{
+    background-image: url(../images/thankyoubg.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100%;
+    height: 1040px;  
+    padding: 100px;   
+    text-align: center;  
+    position: relative;    
+}
+@media (max-width:1440px) {
+    .thank-details{
+        background-image: url(../images/thankyoubg.png);
+        background-repeat: no-repeat;
+        background-position: center;
+        width: 100%;
+        height: 700px;           
+    }   
+}
+.thankcontent .col-lg-8{
+    margin: 0%;
+    padding: 0%;
+}
+.thankcontent .col-lg-4{
+    margin: 0%;
+    padding: 0%;
+}
+/* .thank-details::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(rgba(241, 241, 241, 0.20), rgba(241, 241, 241, 0.20));
+    opacity: 0.25;
+    z-index: -1;
+} */
+ 
+
+.thank-details h1{
+    color: #005674;
+    font-family: 'Eina2-light';
+    font-size: 80px;
+}
+.thank-details .para{
+color: #005674;
+font-family: 'Eina2-light';
+font-size: 25px;
+/* padding: 0 20px 0 20px; */
+margin-top: 70px;
+}
+.thank-details h3{
+    background: rgba(111, 207, 235, 0.15);
+    padding: 40px;
+    font-family: 'Eina2-light';
+    font-size: 40px;
+    color: #005674;
+    margin-top: 70px;
+}
+.thank-details p{
+    margin-top: 70px;
+    font-family: 'Eina2-light';
+    font-size: 20px;
+    color: #005674;
+}
+.thank-details .btn{
+background-color: #005674;
+padding: 20px 100px;
+margin-top: 70px;
+color: var(--white);
+font-family: 'Eina2';
+font-size: 20px;
+}
+.thank-details .btn:hover{
+    background-color: #CDA17F;
+}
+.thank-total{
+    background: #F9F9F9;
+    padding: 90px 50px;
+}
+.thank-total h3{
+    color: #005674;
+    font-family: 'Eina2-light';
+    font-size: 50px;
+}
+.thank-total .sub{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 60px;
+}
+.thank-total .sub p{
+    color: #000;
+    font-size: 'Eina2-light';
+    font-size: 25px;
+}
+.thank-total .sub span{
+    font-family: 'Eina2';
+    color: #000;
+    font-size: 25px;
+}
+.thank-total .wrap{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 60px;
+}
+.thank-total .wrap > :nth-child(1){
+    color: #000;
+    font-family: 'Eina2-light';
+    font-size: 25px;
+}
+.thank-total .wrap > :nth-child(2){
+    color: #000;
+    font-family: 'Eina2';
+    font-size: 25px;
+}
+.thank-total .wrap span{
+    color: #000;
+    font-family: 'Eina2';
+    font-size: 25px;
+}
+.thank-total .grandtotal{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 60px;
+}
+.thank-total .grandtotal p{
+    font-family: 'Eina2-light';
+    font-size: 30px;
+    color: #000;
+}
+.thank-total .grandtotal h4{
+    color: #FF4747;
+    font-family: 'Eina2-light';
+    font-size: 50px;
+}
+.thank-total .btn{
+    background-color: #005674;
+    padding: 20px;
+    width: 100%;
+    font-family: 'Eina2';
+    font-size: 20px;
+    color: var(--white);
+    margin-top: 60px;
+}
+.thank-total .btn:hover{
+    background-color: #CDA17F;
+}
+
+
+
+@media (max-width: 1440px) {
+    .thank-details{
+        padding: 50px;
+    }
+    .thank-details h1 {
+        font-size: 50px;
+    }
+
+    .thank-details .para{
+        font-size: 20px;
+margin-top: 40px;
+    }
+   
+    .thank-details h3 {
+        padding: 30px;
+        font-size: 28px;
+        margin-top: 40px;
+    }
+    .thank-details p{
+        margin-top: 40px;
+        font-size: 16px;
+    }
+    .thank-details .btn {
+        padding: 20px 80px;
+        margin-top: 40px;
+        font-size: 18px;
+    }
+
+    .thank-total{
+        padding: 59px 30px;
+    }
+    .thank-total h3{
+        font-size: 40px;
+    }
+    .thank-total .sub{
+        margin-top: 33px;
+    }
+    .thank-total .sub p{
+        font-size: 20px;
+    }
+    .thank-total .sub span{
+        font-size: 20px;
+    }
+    .thank-total .wrap{
+        margin-top: 33px;
+    }
+    .thank-total .wrap > :nth-child(1){
+        font-size: 20px;
+    }
+    .thank-total .wrap > :nth-child(2){
+        font-size: 20px;
+    }
+    .thank-total .wrap span{
+        font-size: 20px;
+    }
+    .thank-total .grandtotal{
+        margin-top: 33px;
+    }
+    .thank-total .grandtotal p{
+        font-size: 23px;
+    }
+    .thank-total .grandtotal h4{
+        font-size: 33px;
+    }
+    .thank-total .btn{
+        background-color: #005674;
+        padding: 16px;
+        font-size: 16px;
+        margin-top: 33px;
+    }
+
+}
+/* Thank You End */
+
+
+/* Contact Us */
+.contact{
+    /* padding: 0 0 90px; */
+  background: url('../images/contactwave.png') no-repeat;
+  padding: 13.875rem 0 5rem;
+  margin-top: -23rem;
+  background-repeat: no-repeat;
+  background-position-x: center;
+  z-index: 1;
+  position: relative;
+}
+/* Contact Us */
