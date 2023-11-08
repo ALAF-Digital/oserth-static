@@ -521,6 +521,7 @@ header {
     background: linear-gradient(180deg, rgba(255, 255, 255, 0.00) 20.28%, #E1E1E1 109.21%);
     opacity: 0.25;
     z-index: -1;
+
 }
 
 .essence-head h1 {
@@ -1272,7 +1273,7 @@ header {
     width: 85%;
 }
 
-.circleimage li:last-child img {
+.circleimage .circle-group img {
     height: 200px;
     border-radius: 0%;
     width: 15px;
@@ -2569,8 +2570,20 @@ footer form label {
     width: 100%;
     background-size: cover;
     background-repeat: no-repeat;
-    /* background-position: center; */
+    background-position: center;
     position: relative;
+}
+.product::before {
+    content: "";
+    position: absolute;
+    bottom: -2rem;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0.25;
+    z-index: 1;
+    background: linear-gradient(180deg, #FFF 36.35%, rgba(255, 255, 255, 0.00) 50.31%, #FFF 63.7%);
 }
 
 .product .product-heading {
@@ -2580,6 +2593,7 @@ footer form label {
     transform: translate(-50%, -50%);
     width: 35%;
     text-align: center;
+    z-index: 2;
 }
 
 .product .product-heading h1 {
@@ -3431,19 +3445,20 @@ footer form label {
     padding: 0%;
 }
 
-/* .thank-details::before {
+.thank-details::before {
     content: "";
     position: absolute;
     top: 0;
     left: 0;
     right: 0;
     bottom: 0;
-    background: linear-gradient(rgba(241, 241, 241, 0.20), rgba(241, 241, 241, 0.20));
-    opacity: 0.25;
+    background: linear-gradient(rgba(241, 241, 241, 0.20), rgba(241, 241, 241, 1));
     z-index: -1;
-} */
+}
 
-
+.thank-details{
+    z-index: 3;
+}
 .thank-details h1 {
     color: #005674;
     font-family: 'Eina2-light';
@@ -3707,6 +3722,7 @@ footer form label {
     box-shadow: none !important;
     border: none !important;
     border-radius: 0;
+    background-color: var(--white);
 }
 
 .contact .block {
@@ -3728,9 +3744,10 @@ border-radius: 0%;
 border: none !important;
 
 }
-.contact .dropdown li{
+.contact .dropdown .dropdown-item{
     color: #555;
     margin: 10px;
+    background-color: transparent;
 }
 .contact textarea{
     resize: none;
@@ -3748,10 +3765,12 @@ border: none !important;
     background-color: #CDA17F;
 }
 
-.contact .col-lg-8, .col-lg-4{
+.contact .col-lg-8{
     padding: 0%;
 } 
-
+.contact .col-lg-4{
+    padding: 0%;
+}
 .contact .contact-info{
     background: #F9F9F9;
     padding: 100px 50px;
@@ -3775,11 +3794,18 @@ border: none !important;
     font-size: 25px;
     padding: 50px 0 50px;
 }
-.contact .contact-details p,a{
+.contact .contact-details p
+ {
     font-family: 'Eina2';
     font-size: 25px;
     color: #000;    
 }
+.contact .contact-details a{
+    font-family: 'Eina2';
+    font-size: 25px;
+    color: #000;
+}
+
 .contact-details .email{
     border-bottom: 1px solid rgba(85, 85, 85, 0.33);
     padding: 0px 0 50px;
@@ -3799,7 +3825,6 @@ border: none !important;
     font-size: 20px;
     margin-right: 22px;
 }
-/* Contact Us */
 
 
 @media (max-width:1440px) {
@@ -3852,7 +3877,10 @@ border: none !important;
         font-size: 20px;
         padding: 30px 0 30px;
     }
-    .contact .contact-details p,a{
+    .contact .contact-details p{
+        font-size: 20px; 
+    }
+    .contact .contact-details a{
         font-size: 20px; 
     }
     .contact-details .email{
@@ -3869,5 +3897,458 @@ border: none !important;
     .contact .contact-icons i{
         font-size: 18px;
         margin-right: 20px;
+    }
+}
+
+/* Contact Us */
+
+
+
+/* Our Ingredients */
+.ingredients{
+    padding: 7.4rem 0 3rem
+}
+.ingredients .wave-line {
+    position: absolute;
+    top: 5px;
+    bottom: 0px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    z-index: 2;
+}
+
+
+@media (max-width:1400px) {
+    .ingredients .detail-head {
+        padding: 0 0;
+    }
+}
+
+.ingredients .detail-head p {
+    font-family: 'Eina2-light';
+    font-size: 15px;
+    color: #000;
+    margin-right: 10px;
+}
+
+.ingredients .detail-head i {
+    font-size: 10px;
+    margin-right: 10px;
+    color: #D9D9D9;
+}
+.ingredients .ingredients-heading{
+    text-align: center;
+   padding: 60px 0 60px;
+}
+.ingredients .ingredients-heading h1{
+    color: #005674;
+    font-family: 'Eina2-light';
+    font-size: 80px;
+    padding: 0 100px 0 100px;
+}
+.ingredients .ingredients-heading p{
+    padding-top: 40px;
+    color: #000;
+    font-family: 'Eina2';
+    font-size: 20px;
+}
+
+.ingredients-images{
+    background-image: none;
+}
+
+.ingredients-circle .circle-group img {
+    height: 200px;
+    border-radius: 0%;
+    width: 15px;
+    margin-left: 10px;
+}
+
+.ingredients-content{
+    padding: 70px 0 70px;
+}
+.ingredients-content .philosophy h3{
+    color: #1D252E;
+    font-family: 'Eina2-light';
+    font-size: 40px;
+}
+.ingredients-content .philosophy-para{
+    margin-top: 50px;
+    font-family: 'Eina2';
+    color: #000;
+    font-size: 20px;
+}
+.ingredients-content .philosophy-img{
+    height: 800px;
+    width: 100%;
+    object-fit: cover;
+    margin-top: 70px;
+}
+.ingredients-content .philosophy h4{
+    color: #005674;
+    font-family: 'Eina2-light';
+    font-size: 40px;
+    margin-top: 70px;
+}
+.ingredients-content .philosophy .efficacy-para{
+    font-size: 20px;
+    color: #000;
+    font-family: 'Eina2';
+    margin-top: 50px;
+}
+.ingredients-content .philosophy .para{
+    font-size: 20px;
+    color: #000;
+    font-family: 'Eina2';
+    margin: 50px 0 30px;
+    text-align: center;
+}
+.ingredients-content .wave-line {
+    position: absolute;
+    /* top: 0px; */
+    /* bottom: 0px; */
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    /* z-index: 2; */
+    /* margin-top: 70px; */
+}
+.ingredients-content .Ingredient-Glossary{
+    margin-top: 260px;
+}
+.ingredients-content .Ingredient-Glossary h3{
+    text-align: center;
+    font-family: 'Eina2-light';
+    font-size: 40px;
+    color: #005674;
+}
+.a-section .col-lg-5, .col-lg-7{
+    margin-top: 70px;
+}
+.a-section .a-section-span span{
+    display: flex;
+    align-items: center;
+    color: #6FCFEB;
+    font-family: 'Eina2-light';
+    font-size: 20px;
+    gap: 20px;
+}
+.a-section .a-section-span p{
+    /* padding-left: 20px; */
+    font-family: 'Eina2-light';
+    font-size: 20px;
+    color: #005674;
+}
+.a-section .para{
+    color: #000;
+    font-family: 'Eina2';
+    font-size: 15px;
+}
+
+
+@media (max-width:1440px) {
+    .ingredients .ingredients-heading{
+       padding: 50px 0 50px;
+    }
+    .ingredients .ingredients-heading h1{
+        font-size: 50px;
+        padding: 0 50px 0 30px;
+    }
+    .ingredients .ingredients-heading p{
+        padding-top: 30px;
+        font-size: 20px;
+    }
+    
+    
+    .ingredients-content{
+        padding: 50px 0 50px;
+    }
+    .ingredients-content .philosophy h3{
+        font-size: 30px;
+    }
+    .ingredients-content .philosophy-para{
+        margin-top: 30px;
+        font-size: 17px;
+    }
+    .ingredients-content .philosophy-img{
+        height: 500px;
+        margin-top: 50px;
+    }
+    .ingredients-content .philosophy h4{
+        font-size: 30px;
+        margin-top: 50px;
+    }
+    .ingredients-content .philosophy .efficacy-para{
+        font-size: 17px;
+        margin-top: 30px;
+    }
+    .ingredients-content .philosophy .para{
+        font-size: 17px;
+        margin: 30px 0 30px;
+    }
+
+    .ingredients-content .Ingredient-Glossary{
+        margin-top: 180px;
+    }
+    .ingredients-content .Ingredient-Glossary h3{
+        font-size: 30px;
+    }
+    .a-section .col-lg-5, .col-lg-7{
+        margin-top: 50px;
+    }
+    .a-section .a-section-span span{
+        font-size: 17px;
+        gap: 20px;
+    }
+    .a-section .a-section-span p{
+        font-size: 17px;
+    }
+    .a-section .para{
+        font-size: 15px;
+    }
+}
+/* Our Ingredients End */
+
+/* FAQ's */
+
+.faqs-heading p{
+padding-top: 60px !important;
+}
+
+.faqs-accordion .accordion-heading h1{
+    color: #005674;
+    font-size: 40px;
+    font-family: 'Eina2';
+    margin-bottom: 30px;
+    margin-top: 30px;
+}
+.faqs-accordion .accordion-item{
+    border: none !important;
+  padding-bottom: 20px;
+}
+.faqs-accordion .accordion-item .accordion-button{
+    background-color: #F4F4F4;
+    box-shadow: none !important;
+    color: #005571;
+    font-family: 'Eina2';
+    font-size: 20px;
+}
+.faqs-accordion .accordion-button:hover{
+    background-color: #CDA17F; 
+    color: var(--white); 
+}
+
+
+.faqs-accordion .accordion-body p{
+    color: #555;
+    font-family: 'Eina2';
+    font-size: 20px;
+}
+
+@media (max-width:1440px) {
+    .faqs-heading p{
+        padding-top: 30px !important;
+        font-size: 16px !important;
+        }
+            
+            .faqs-accordion .accordion-heading h1{
+                font-size: 30px;
+                margin-bottom: 20px;
+                margin-top: 20px;
+            }
+            .faqs-accordion .accordion-item{
+              padding-bottom: 15px;
+            }
+            .faqs-accordion .accordion-item .accordion-button{
+                font-size: 17px;
+            }
+            .faqs-accordion .accordion-button:hover{
+                background-color: #CDA17F; 
+                color: var(--white); 
+            }
+            
+            
+            .faqs-accordion .accordion-body p{
+                color: #555;
+                font-family: 'Eina2';
+                font-size: 16px;
+            }
+}
+/* FAQ's End */
+
+
+/* Distribution */
+.distribution{
+    background-color: bisque;
+}
+/* Distribution End*/
+
+
+
+/* About Us */
+.about-heading h1{
+    color: var(--secondary) !important;
+    font-size: 60px !important;
+}
+.about-content .about-head{
+     padding: 0 0px;
+}
+.about-content {
+    padding: 7.875rem 0 3rem;
+}
+.about-content .about-oserth{
+    margin-top: 70px;
+}
+.about-content .about-oserth p{
+    text-align: center;
+   font-family: 'Eina2-light';
+   font-size: 30px;
+   color: #000;
+   padding: 0 30px 0 30px ;
+}
+.about-content .about-card{
+    margin: 50px 0 110px;
+}
+.about-card .our-ocean h3{
+    color: #005674;
+    font-family: 'Eina2-light';
+    font-size: 40px;
+}
+.about-card .our-ocean .collect{
+    color: #979797;
+    padding: 15px 0 15px;
+    font-family: 'Eina2-light';
+    font-size: 30px;
+}
+.about-card .our-ocean .inspire{
+color: #000;
+font-family: 'Eina2';
+font-size: 18px;
+
+}
+.about-card .our-ocean .sky{
+    color: var(--Blue-Sky, #00A4EB);
+}
+.about-card .our-ocean .earth{
+    color: var(--Earth, #CDA17F);
+}
+
+.our-body h3{
+   font-family: 'Eina2-light';
+   font-size: 40px;
+   color: #005674;
+}
+.our-body p{
+    color: #000;
+    font-family: 'Eina2';
+    font-size: 20px;
+    margin-top: 50px;
+}
+.our-body-img img{
+    background-size: cover;
+    height: 650px;
+}
+
+.we-care{
+    padding: 70px 0 70px;
+}
+.we-care .wecare-heading h1{
+    font-family: 'Eina2';
+    font-size: 65px;
+    color: #005674;
+    padding-bottom: 50px;
+    text-align: center;
+}
+.we-care .wecare-heading p{
+    font-family: 'Eina2';
+    font-size: 20px;
+    color: #000;
+    text-align: center;
+
+}
+.beautyImg{
+    margin-top: 70px;
+}
+.beautyImg img{
+    height: 400px;
+    object-fit: cover;
+    width: 100%;
+}
+.beauty-content{
+    margin-top: 70px;
+}
+.beauty-content h3{
+    color: #005674;
+    font-family: 'Eina2-light';
+    font-size: 40px;
+}
+.beauty-content p{
+    font-family: 'Eina2';
+    font-size: 20px;
+    color: #000;
+    padding-top: 50px;
+}
+/* About Us End*/
+
+
+@media (max-width:1440px) {
+    .about-content .about-oserth{
+        margin-top: 50px;
+    }
+    .about-content .about-oserth p{
+       font-size: 20px;
+       padding: 0 20px 0 20px ;
+    }
+    .about-content .about-card{
+        margin: 30px 0 60px;
+    }
+    .about-card .our-ocean h3{
+        font-size: 30px;
+    }
+    .about-card .our-ocean .collect{
+        padding: 10px 0 10px;
+        font-size: 20px;
+    }
+    .about-card .our-ocean .inspire{
+    font-size: 16px;
+    }
+    
+    .our-body h3{
+       font-size: 30px;
+    }
+    .our-body p{
+        font-size: 16px;
+        margin-top: 30px;
+    }
+    .our-body-img img{
+        height: 440px;
+    }
+    
+    .we-care{
+        padding: 50px 0 50px;
+    }
+    .we-care .wecare-heading h1{
+        font-size: 45px;
+        padding-bottom: 30px;
+    }
+    .we-care .wecare-heading p{
+        font-size: 16px;
+    }
+    .beautyImg{
+        margin-top: 50px;
+    }
+    .beautyImg img{
+        height: 300px;
+    }
+    .beauty-content{
+        margin-top: 50px;
+    }
+    .beauty-content h3{
+        font-size: 30px;
+    }
+    .beauty-content p{
+        font-size: 16px;
+        padding-top: 30px;
     }
 }
