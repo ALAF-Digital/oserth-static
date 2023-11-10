@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" />
     <!-- Custom CSS -->
     <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/responsive.css">
 </head>
 
 <body>
@@ -62,6 +63,10 @@
                         </a>
                     </li>
                 </ul>
+                <button class="navbar-toggler" type="button" type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#mobileNav" aria-controls="mobileNav">
+                    <span class="fas fa-bars"></span>
+                </button>
                 <a href="index.html" class="navbar-brand">
                     <img src="assets/images/headerlogo.svg" class="img-fluid" alt="">
                 </a>
@@ -77,8 +82,14 @@
                             <li><a class="dropdown-item" href="#">GBP</a></li>
                         </ul>
                     </li>
-                    <li><a href="#" type="button" data-bs-toggle="offcanvas" data-bs-target="#searchTop"
-                            aria-controls="searchTop"><i class="fa-solid fa-magnifying-glass"></i></a></li>
+                    <li class="mobile-logo">
+                        <a href="index.html" class="navbar-brand">
+                            <img src="assets/images/mobilelogo.png" class="img-fluid " alt="">
+                        </a>
+                    </li>
+                    <li class="searchbtn-menu"><a href="#" type="button" data-bs-toggle="offcanvas"
+                            data-bs-target="#searchTop" aria-controls="searchTop"><i
+                                class="fa-solid fa-magnifying-glass"></i></a></li>
                     <li><a href="#"><i class="fa-regular fa-user"></i></a></li>
                     <li><a href="my-cart.html"><i class="fa-solid fa-bag-shopping"></i></a></li>
                 </ul>
@@ -86,11 +97,7 @@
         </div>
         <nav class="navbar navbar-expand-md">
             <div class="container">
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                    aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
+
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav mx-auto">
                         <li class="nav-item dropdownmy">
@@ -216,21 +223,21 @@
                 <p class="mt-3">Experience beauty with our cruelty-free</p>
             </div>
             <div class="row mt-4">
-                <div class="col-md-4 ">
+                <div class="col-md-4 col-6 ">
                     <div class="essence-friendly mb-5">
                         <img src="assets/images/Group (1).png" class="img-fluid" alt="">
                         <h3>Animal Friendly</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur.</p>
+                        <p class="friendly-para">Lorem ipsum dolor sit amet consectetur.</p>
                     </div>
                     <div class="essence-friendly mb-5">
                         <img src="assets/images/Group.png" class="img-fluid" alt="">
                         <h3>Vegan Friendly</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur.</p>
+                        <p class="friendly-para">Lorem ipsum dolor sit amet consectetur.</p>
                     </div>
                     <div class="essence-friendly">
                         <img src="assets/images/Group (2).png" class="img-fluid" alt="">
                         <h3>Clean Beauty</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur.</p>
+                        <p class="friendly-para">Lorem ipsum dolor sit amet consectetur.</p>
                     </div>
                 </div>
 
@@ -238,21 +245,21 @@
                     <img src="assets/images/Fortify 1.png" class="img-fluid" alt="">
                 </div>
 
-                <div class="col-md-4  text-end">
+                <div class="col-md-4 col-6  text-end">
                     <div class="essence-friendly mb-5">
                         <img src="assets/images/Green.png" class="img-fluid" alt="">
                         <h3>I’m Green</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur.</p>
+                        <p class="friendly-para">Lorem ipsum dolor sit amet consectetur.</p>
                     </div>
                     <div class="essence-friendly mb-5">
                         <img src="assets/images/Sun.png" class="img-fluid" alt="">
                         <h3>Made By Sun</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur.</p>
+                        <p class="friendly-para">Lorem ipsum dolor sit amet consectetur.</p>
                     </div>
                     <div class="essence-friendly">
                         <img src="assets/images/Recyclable.png" class="img-fluid" alt="">
                         <h3>Recyclable</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur.</p>
+                        <p class="friendly-para">Lorem ipsum dolor sit amet consectetur.</p>
                     </div>
                 </div>
             </div>
@@ -262,8 +269,6 @@
 
     <!-- About Section End -->
 
-    <!-- <div class="vector">
-    </div> -->
 
 
     <!-- Best Seller -->
@@ -277,23 +282,11 @@
             <div class="row pro-row">
                 <div class="col-lg-3 col-sm-6 col-6">
                     <div class="seller-card">
-                        <!-- style="--bg:#E9D69E;"  -->
                         <figure>
                             <div class="productImg">
                                 <img src="assets/images/homeproduct.png" class="img-fluid" alt="">
                             </div>
-                            <!-- <svg xmlns="http://www.w3.org/2000/svg" width="194" height="176" viewBox="0 0 194 176"
-                                fill="none">
-                                <path fill-rule="evenodd" clip-rule="evenodd"
-                                    d="M4.10278 116.578C-3.99764 89.4287 2.73371 59.3799 18.9938 36.204C34.0696 14.7162 59.4297 0.356258 85.6673 0.322337C108.027 0.293424 121.556 22.6136 139.448 36.0483C153.731 46.7724 170.306 53.9278 178.327 69.8948C188.496 90.1392 200.15 114.792 188.864 134.421C177.575 154.054 149.483 151.089 127.837 157.703C104.747 164.758 82.9631 181.401 60.0427 173.783C33.7476 165.043 12.0322 143.154 4.10278 116.578Z"
-                                    fill="var(--bg)" fill-opacity="0.1" />
-                            </svg>
-                            <svg xmlns="http://www.w3.org/2000/svg" width="187" height="202" viewBox="0 0 187 202"
-                                fill="none">
-                                <path fill-rule="evenodd" clip-rule="evenodd"
-                                    d="M83.8148 0.697664C114.779 -0.169631 144.608 15.3559 164.483 38.9546C182.91 60.8346 190.898 91.5097 183.51 119.075C177.213 142.566 149.813 150.493 130.561 165.504C115.194 177.486 102.947 192.88 83.8148 196.81C59.5574 201.793 30.2236 207.096 12.6879 189.719C-4.85217 172.337 6.22868 143.669 5.36908 119.075C4.45212 92.8392 -6.95903 65.2776 7.57214 43.3497C24.2428 18.1931 53.5045 1.54665 83.8148 0.697664Z"
-                                    fill="var(--bg)" fill-opacity="0.1" />
-                            </svg> -->
+
                             <ul class="badge-group">
                                 <li>
                                     <p>Best<br>
@@ -323,22 +316,8 @@
                 </div>
                 <div class="col-lg-3 col-sm-6 col-6">
                     <div class="seller-card">
-                        <!-- style="--bg:#6FCFEB;" -->
                         <figure>
                             <img src="assets/images/homeproduct1.png" class="img-fluid" alt="">
-                            <!-- <svg xmlns="http://www.w3.org/2000/svg" width="194" height="176" viewBox="0 0 194 176"
-                                fill="none">
-                                <path fill-rule="evenodd" clip-rule="evenodd"
-                                    d="M4.10278 116.578C-3.99764 89.4287 2.73371 59.3799 18.9938 36.204C34.0696 14.7162 59.4297 0.356258 85.6673 0.322337C108.027 0.293424 121.556 22.6136 139.448 36.0483C153.731 46.7724 170.306 53.9278 178.327 69.8948C188.496 90.1392 200.15 114.792 188.864 134.421C177.575 154.054 149.483 151.089 127.837 157.703C104.747 164.758 82.9631 181.401 60.0427 173.783C33.7476 165.043 12.0322 143.154 4.10278 116.578Z"
-                                    fill="var(--bg)" fill-opacity="0.1" />
-                            </svg>
-                            <svg xmlns="http://www.w3.org/2000/svg" width="187" height="202" viewBox="0 0 187 202"
-                                fill="none">
-                                <path fill-rule="evenodd" clip-rule="evenodd"
-                                    d="M83.8148 0.697664C114.779 -0.169631 144.608 15.3559 164.483 38.9546C182.91 60.8346 190.898 91.5097 183.51 119.075C177.213 142.566 149.813 150.493 130.561 165.504C115.194 177.486 102.947 192.88 83.8148 196.81C59.5574 201.793 30.2236 207.096 12.6879 189.719C-4.85217 172.337 6.22868 143.669 5.36908 119.075C4.45212 92.8392 -6.95903 65.2776 7.57214 43.3497C24.2428 18.1931 53.5045 1.54665 83.8148 0.697664Z"
-                                    fill="var(--bg)" fill-opacity="0.2" />
-                            </svg> -->
-
 
                             <ul class="badge-group badge-group1">
                                 <li>
@@ -366,22 +345,8 @@
                 </div>
                 <div class="col-lg-3 col-sm-6 col-6">
                     <div class="seller-card">
-                        <!-- style="--bg:#AEDAB5;" -->
                         <figure>
                             <img src="assets/images/homeproduct2.png" class="img-fluid" alt="">
-
-                            <!-- <svg xmlns="http://www.w3.org/2000/svg" width="194" height="176" viewBox="0 0 194 176"
-                                fill="none">
-                                <path fill-rule="evenodd" clip-rule="evenodd"
-                                    d="M4.10278 116.578C-3.99764 89.4287 2.73371 59.3799 18.9938 36.204C34.0696 14.7162 59.4297 0.356258 85.6673 0.322337C108.027 0.293424 121.556 22.6136 139.448 36.0483C153.731 46.7724 170.306 53.9278 178.327 69.8948C188.496 90.1392 200.15 114.792 188.864 134.421C177.575 154.054 149.483 151.089 127.837 157.703C104.747 164.758 82.9631 181.401 60.0427 173.783C33.7476 165.043 12.0322 143.154 4.10278 116.578Z"
-                                    fill="var(--bg)" fill-opacity="0.1" />
-                            </svg>
-                            <svg xmlns="http://www.w3.org/2000/svg" width="187" height="202" viewBox="0 0 187 202"
-                                fill="none">
-                                <path fill-rule="evenodd" clip-rule="evenodd"
-                                    d="M83.8148 0.697664C114.779 -0.169631 144.608 15.3559 164.483 38.9546C182.91 60.8346 190.898 91.5097 183.51 119.075C177.213 142.566 149.813 150.493 130.561 165.504C115.194 177.486 102.947 192.88 83.8148 196.81C59.5574 201.793 30.2236 207.096 12.6879 189.719C-4.85217 172.337 6.22868 143.669 5.36908 119.075C4.45212 92.8392 -6.95903 65.2776 7.57214 43.3497C24.2428 18.1931 53.5045 1.54665 83.8148 0.697664Z"
-                                    fill="var(--bg)" fill-opacity="0.2" />
-                            </svg> -->
 
 
                             <ul class="badge-group badge-group2">
@@ -413,21 +378,8 @@
                 <div class="col-lg-3 col-sm-6 col-6">
                     <div class="seller-card">
 
-                        <!-- style="--bg:#E3B5E0;" -->
                         <figure>
                             <img src="assets/images/homeproduct3.png" class="img-fluid" alt="">
-                            <!-- <svg xmlns="http://www.w3.org/2000/svg" width="194" height="176" viewBox="0 0 194 176"
-                                fill="none">
-                                <path fill-rule="evenodd" clip-rule="evenodd"
-                                    d="M4.10278 116.578C-3.99764 89.4287 2.73371 59.3799 18.9938 36.204C34.0696 14.7162 59.4297 0.356258 85.6673 0.322337C108.027 0.293424 121.556 22.6136 139.448 36.0483C153.731 46.7724 170.306 53.9278 178.327 69.8948C188.496 90.1392 200.15 114.792 188.864 134.421C177.575 154.054 149.483 151.089 127.837 157.703C104.747 164.758 82.9631 181.401 60.0427 173.783C33.7476 165.043 12.0322 143.154 4.10278 116.578Z"
-                                    fill="var(--bg)" fill-opacity="0.1" />
-                            </svg>
-                            <svg xmlns="http://www.w3.org/2000/svg" width="187" height="202" viewBox="0 0 187 202"
-                                fill="none">
-                                <path fill-rule="evenodd" clip-rule="evenodd"
-                                    d="M83.8148 0.697664C114.779 -0.169631 144.608 15.3559 164.483 38.9546C182.91 60.8346 190.898 91.5097 183.51 119.075C177.213 142.566 149.813 150.493 130.561 165.504C115.194 177.486 102.947 192.88 83.8148 196.81C59.5574 201.793 30.2236 207.096 12.6879 189.719C-4.85217 172.337 6.22868 143.669 5.36908 119.075C4.45212 92.8392 -6.95903 65.2776 7.57214 43.3497C24.2428 18.1931 53.5045 1.54665 83.8148 0.697664Z"
-                                    fill="var(--bg)" fill-opacity="0.1" />
-                            </svg> -->
 
                             <ul class="badge-group badge-group3">
                                 <li>
@@ -559,6 +511,96 @@
 
     <!-- Our Collection End-->
 
+    <!-- Oue Collection Mobile -->
+
+    <section class="best-seller our-collection-mobile">
+        <div class="container-fluid">
+            <div class="collection-head text-center">
+                <h1>Safe, pure, and naturally beautiful</h1>
+                <p>it's all in our collection.</p>
+            </div>
+
+            <div class="row pro-row">
+                <div class="col-lg-3 col-sm-6 col-6">
+                    <div class="seller-card">
+                        <figure>
+                            <div class="productImg">
+                                <img src="assets/images/collection3.png" class="img-fluid" alt="">
+                            </div>
+
+                        </figure>
+
+                        <div class="seller-body">
+                            <a href="product-details.html">
+                                <h4 class="mb-3">Smooth</h4>
+                            </a>
+                            <p class="mb-3">Softening moisture for dry, brittle & frizzy hair</p>
+                            <a href="product-details.html" class="btn">Find more</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-sm-6 col-6">
+                    <div class="seller-card">
+                        <figure>
+                            <div class="productImg">
+                                <img src="assets/images/collection3.png" class="img-fluid" alt="">
+                            </div>
+
+                        </figure>
+
+                        <div class="seller-body">
+                            <a href="product-details.html">
+                                <h4 class="mb-3">Smooth</h4>
+                            </a>
+                            <p class="mb-3">Softening moisture for dry, brittle & frizzy hair</p>
+                            <a href="product-details.html" class="btn">Find more</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-sm-6 col-6">
+                    <div class="seller-card">
+                        <figure>
+                            <div class="productImg">
+                                <img src="assets/images/collection3.png" class="img-fluid" alt="">
+                            </div>
+
+                        </figure>
+
+                        <div class="seller-body">
+                            <a href="product-details.html">
+                                <h4 class="mb-3">Smooth</h4>
+                            </a>
+                            <p class="mb-3">Softening moisture for dry, brittle & frizzy hair</p>
+                            <a href="product-details.html" class="btn">Find more</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-sm-6 col-6">
+                    <div class="seller-card">
+                        <figure>
+                            <div class="productImg">
+                                <img src="assets/images/collection3.png" class="img-fluid" alt="">
+                            </div>
+
+                        </figure>
+
+                        <div class="seller-body">
+                            <a href="product-details.html">
+                                <h4 class="mb-3">Smooth</h4>
+                            </a>
+                            <p class="mb-3">Softening moisture for dry, brittle & frizzy hair</p>
+                            <a href="product-details.html" class="btn">Find more</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Oue Collection Mobile End -->
+
     <!-- Our Brand -->
     <section class="our-brand">
         <div class="container">
@@ -569,14 +611,14 @@
                             best self</h1>
                     </div>
                 </div>
-                <div class="col-md-6 p-0">
+                <div class="col-md-6 col-sm-6 col-6 p-0">
                     <div class="brand-image">
                         <img src="assets/images/brand.png" alt="">
                     </div>
                 </div>
 
 
-                <div class="col-md-6 p-0">
+                <div class="col-md-6 col-sm-6 col-6 p-0">
                     <div class="brand-image">
                         <img src="assets/images/brand1.png" alt="">
                     </div>
@@ -718,42 +760,39 @@
     <footer>
         <div class="container-fluid">
             <div class="row  justify-content-between pb-3">
-                
-                    <div class="col-xl-2 col-lg-3">
-                        <a href="#" class="footerlogo"><img src="assets/images/footerlogo.png" class="img-fluid"
-                                alt=""></a>
 
-                    </div>
-                    <div class="col-xl-4 col-lg-5">
-                        <h4>Subscribe to our newsletter</h4>
-                        <form action="">
-                            <div class="form"><input type="text" class="form-control"
-                                    placeholder="Enter your email here">
-                                <button class="btn">Submit <img src="assets/images/plane.png" class="ms-2"
-                                        alt=""></button>
-                            </div>
+                <div class="col-xl-2 col-lg-3">
+                    <a href="#" class="footerlogo"><img src="assets/images/footerlogo.png" class="img-fluid" alt=""></a>
 
-                            <label>
-                                <input type="checkbox"><span>By entering your email you confirm you have read the
-                                    Privacy
-                                    Policy
-                                    and you agree to receive (just great) emails from Fler.</span>
-                            </label>
-                        </form>
-                    </div>
+                </div>
+                <div class="col-xl-4 col-lg-5">
+                    <h4>Subscribe to our newsletter</h4>
+                    <form action="">
+                        <div class="form"><input type="text" class="form-control" placeholder="Enter your email here">
+                            <button class="btn">Submit <img src="assets/images/plane.png" class="ms-2" alt=""></button>
+                        </div>
 
-                    <div class="col-xl-4 col-lg-4">
-                        <ul class="quicklink">
-                            <li><a href="#">About us</a></li>
-                            <li><a href="#">Shop</a></li>
-                            <li><a href="#">Journal</a></li>
-                            <li><a href="#">Ingredients</a></li>
-                            <li><a href="FAQ's.html">FAQ’s</a></li>
-                            <li><a href="#">Contact us</a></li>
-                            <li><a href="login.html">Login</a></li>
-                            <li><a href="distributor.html">Become a Distributor</a></li>
-                        </ul>
-                    </div>
+                        <label>
+                            <input type="checkbox"><span>By entering your email you confirm you have read the
+                                Privacy
+                                Policy
+                                and you agree to receive (just great) emails from Fler.</span>
+                        </label>
+                    </form>
+                </div>
+
+                <div class="col-xl-4 col-lg-4">
+                    <ul class="quicklink">
+                        <li><a href="#">About us</a></li>
+                        <li><a href="#">Shop</a></li>
+                        <li><a href="#">Journal</a></li>
+                        <li><a href="#">Ingredients</a></li>
+                        <li><a href="FAQ's.html">FAQ’s</a></li>
+                        <li><a href="#">Contact us</a></li>
+                        <li><a href="login.html">Login</a></li>
+                        <li><a href="distributor.html">Become a Distributor</a></li>
+                    </ul>
+                </div>
             </div>
             <img src="assets/images/footervector.png" class="img-fluid wave-line" alt="">
 
@@ -788,6 +827,147 @@
         </div>
     </footer>
     <!-- Footer End -->
+
+
+    <!-- Mobile navbar -->
+
+    <div class="offcanvas offcanvas-start" tabindex="-1" id="mobileNav" aria-labelledby="mobileNavLabel">
+        <div class="offcanvas-header">
+            <!-- <h5 class="offcanvas-title" id="mobileNavLabel">Offcanvas</h5> -->
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+            <form class="searchbox-mobile">
+                <input type="search" class="form-control" placeholder="search">
+                <button class="btn"><i class="fa-solid fa-magnifying-glass"></i></button>
+            </form>
+            <ul class="link-mobile">
+                <li>
+                    <a href="product.html" class="mobile-link">Shop</a>
+                    <div class="accordion" id="mobileDropdown">
+                        <div class="accordion-item">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#highlight" aria-expanded="false" aria-controls="highlight">
+                                Highlight
+                            </button>
+                            <div id="highlight" class="accordion-collapse collapse" data-bs-parent="#mobileDropdown">
+                                <div class="accordion-body">
+                                    <ul>
+                                        <li><a href="#">All Products</a></li>
+                                        <li><a href="#">Best Sellers</a></li>
+                                        <li><a href="#">New Arrivals</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#productType" aria-expanded="false" aria-controls="productType">
+                                Product Types
+                            </button>
+                            <div id="productType" class="accordion-collapse collapse" data-bs-parent="#mobileDropdown">
+                                <div class="accordion-body">
+                                    <ul>
+                                        <li><a href="#">Shampoo </a></li>
+                                        <li><a href="#">Hair Mask</a></li>
+                                        <li><a href="#">Leave-in</a></li>
+                                        <li><a href="#">Hair Oil</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collection" aria-expanded="false" aria-controls="collection">
+                                Collection
+                            </button>
+                            <div id="collection" class="accordion-collapse collapse" data-bs-parent="#mobileDropdown">
+                                <div class="accordion-body">
+                                    <ul>
+                                        <li><a href="#">Fortify</a></li>
+                                        <li><a href="#">Restore</a></li>
+                                        <li><a href="#">Smooth</a></li>
+                                        <li><a href="#">Volume</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#hairType" aria-expanded="false" aria-controls="hairType">
+                                Hair Types
+                            </button>
+                            <div id="hairType" class="accordion-collapse collapse" data-bs-parent="#mobileDropdown">
+                                <div class="accordion-body">
+                                    <ul>
+                                        <li><a href="#">Dry Hair</a></li>
+                                        <li><a href="#">Frizzy Hair</a></li>
+                                        <li><a href="#">Damaged Hair</a></li>
+                                        <li><a href="#">Oily & Greasy Hair</a></li>
+                                        <li><a href="#">Hair Loss </a></li>
+                                        <li><a href="#">Sensitive Scalp </a></li>
+                                        <li><a href="#">Oily or Dry Scalp </a></li>
+                                        <li><a href="#">Fine Thin Hair </a></li>
+                                        <li><a href="#">Flat Hair</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li> <a href="aboutus.html" class="mobile-link">About us</a></li>
+                <li>
+                    <a href="journal.html" class="mobile-link">Journal</a>
+                </li>
+                <li>
+                    <a href="Our-Ingredients.html" class="mobile-link">Ingredients</a>
+                </li>
+                <li>
+                    <a href="contact.html" class="mobile-link">Contact us</a>
+                </li>
+            </ul>
+            <div class="foot-mobilenav">
+                <a href="#" class="oserth-email">hello@oserth.com</a>
+                <ul class="social-link mt-2 mb-2">
+                    <li>
+                        <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+
+                    </li>
+                    <li>
+                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="fa-brands fa-pinterest"></i></a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="fa-brands fa-tiktok"></i></a>
+                    </li>
+                </ul>
+                <img src="assets/images/navfoot.png" class="img-fluid" alt="">
+            </div>
+        </div>
+    </div>
+
+    <!-- Mobile navbar End-->
+
+
+    <!-- My Cart Mobile -->
+
+    <!-- <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">Toggle right offcanvas</button>
+
+<div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+  <div class="offcanvas-header">
+    <h5 id="offcanvasRightLabel">Offcanvas right</h5>
+    <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+  </div>
+  <div class="offcanvas-body">
+    
+  </div>
+</div> -->
+
+    <!-- My Cart Mobile End -->
+
+
 
 </body>
 

@@ -37,6 +37,46 @@ var swiper = new Swiper(".mySwiper", {
     },
 });
 
+
+
+
+
+var mySwiper3 = new Swiper(".mySwiper3", {
+    slidesPerView: 1,
+    spaceBetween: 0,
+    loop: true,
+    autoplay: true,
+    pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+        renderBullet: function (index, className) {
+          return '<span class="' + className + '">' + '' + (index + 1) + "</span>";
+        },
+      },
+
+   
+    breakpoints: {
+        420: {
+            slidesPerView: 1,
+            spaceBetween: 4,
+        },
+
+        640: {
+            slidesPerView: 2,
+            spaceBetween: 6,
+        },
+        768: {
+            slidesPerView: 3,
+            spaceBetween: 10,
+        },
+        1024: {
+            slidesPerView: 4,
+            spaceBetween: 10,
+        },
+    },
+});
+
+
 document.querySelector(".nav-item.dropdownmy").addEventListener("click", () => {
     document.querySelector("#shop-dropdown").classList.toggle("show")
 })

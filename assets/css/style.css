@@ -211,6 +211,11 @@ header {
 
 }
 
+.navbar-toggler,
+.more-links .mobile-logo {
+    display: none;
+}
+
 .more-links img {
     border-radius: 50%;
     height: 40px;
@@ -341,6 +346,95 @@ header {
     box-shadow: none !important;
 }
 
+/* Mobile NAv */
+#mobileNav {
+    background-color: #323E48;
+    padding: 30px;
+    width: 300px;
+}
+
+#mobileNav .offcanvas-header,
+#mobileNav .offcanvas-body {
+    padding: 0;
+}
+
+#mobileNav .offcanvas-body {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding-top: 10px;
+}
+
+#mobileNav .foot-mobilenav {
+    margin-top: 20px;
+}
+
+#mobileNav .offcanvas-header .btn-close {
+    filter: brightness(0) invert(1);
+    opacity: 1;
+}
+
+.searchbox-mobile {
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid rgba(242, 242, 242, 0.1);
+}
+
+.searchbox-mobile input {
+    background-color: transparent !important;
+    box-shadow: none !important;
+    padding-left: 0;
+    border: 0;
+    color: var(--white) !important;
+}
+
+.searchbox-mobile input::placeholder {
+    color: rgba(255, 255, 255, 0.2);
+    text-transform: capitalize;
+}
+
+.searchbox-mobile button {
+    color: var(--white);
+}
+
+.foot-mobilenav .social-link {
+    display: flex;
+}
+
+
+#mobileNav .link-mobile li+li {
+    margin-top: 10px;
+}
+
+#mobileNav .accordion-item .accordion-button,
+#mobileNav .accordion-item {
+    border: 0;
+    background-color: transparent !important;
+    color: var(--white);
+    box-shadow: none;
+}
+
+#mobileNav .accordion-item .accordion-button {
+    padding: 10px;
+    color: var(--white);
+    font-size: 1rem;
+    font-family: 'Eina2';
+    letter-spacing: 2px;
+}
+
+#mobileNav .accordion-button::after {
+    filter: brightness(0) invert(1);
+}
+
+.mobile-link {
+    color: var(--white);
+    font-size: 1.125rem;
+    font-family: 'Eina2';
+    letter-spacing: 1.8px;
+}
+
+
+
 /* HEader End */
 @media (max-width:991px) {
     .navbar-nav {
@@ -391,12 +485,9 @@ header {
 
 @media (max-width:425px) {
     .main-hero {
-        height: 700px !important;
+        height: 850px !important;
     }
 
-    .main-hero .main-img {
-        height: 400px;
-    }
 
     .main-hero .swiper .swiper-slide h1 {
         font-size: 2.8rem !important;
@@ -508,6 +599,7 @@ header {
     background-repeat: no-repeat;
     background-position-x: center;
     z-index: 1;
+    background-size: contain;
 }
 
 .about-section::before {
@@ -541,7 +633,6 @@ header {
     font-family: 'Eina2';
     font-size: 25px;
 }
-
 .essence-thumbnail img {
     /* width: 100%; */
     height: 540px;
@@ -582,7 +673,7 @@ header {
         font-size: 22px;
     }
 
-    .essence-thumbnail img {
+    .essence-thumbnail {
         display: none;
     }
 }
@@ -663,6 +754,9 @@ header {
 
 
 /* Our Collection */
+.our-collection-mobile{
+    display: none;
+}
 .our-collection {
     padding: 160px 0 80px;
     background: url(../images/wave.png);
@@ -1006,8 +1100,8 @@ header {
     }
 
     .best-seller {
-        padding-bottom: 70px;
-        padding-top: 7.5rem !important;
+        padding-bottom: 30px;
+        padding-top: 3.5rem !important;
     }
 
     .best-seller .wave-line {
@@ -1087,8 +1181,8 @@ header {
     }
 
     .best-seller {
-        padding-bottom: 70px;
-        padding-top: 6rem !important;
+        padding-bottom: 30px;
+        padding-top: 3rem !important;
     }
 
     .best-seller .wave-line {
@@ -1212,6 +1306,7 @@ header {
     background-position: bottom center;
     background-size: contain;
     margin-bottom: -5rem;
+    overflow: hidden;
     z-index: 1;
 }
 
@@ -2016,6 +2111,136 @@ footer form label {
     /* height: 500px; */
 }
 
+
+.product-swiper{
+    padding: 50px 0 50px;
+}
+.oserh-lover{
+    background-color: #005571;
+     height: 385px;
+     border-radius: 10px;
+     padding: 40px;
+     text-align: center;
+}
+.oserh-lover .oserthicon i{
+   color: #6FCFEB;
+}
+.oserh-lover .review{
+    color: var(--white);
+    font-family: 'Eina2';
+    font-size: 18px;
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
+.oserh-lover h3{
+    font-family: 'Eina2-light';
+    font-size: 40px;
+    color: #6FCFEB;
+    padding-bottom: 75px;
+}
+.oserh-lover .write{
+    color: var(--white);
+    padding: 10px 0;
+    border-radius: 10px;
+    background: #014860;
+    font-family: 'Eina2';
+    font-size: 18px;
+}
+.oserh-lover .write:hover{
+    background-color: #00A4EB;
+}
+
+.mySwiper3 .prodetailCard{
+padding: 40px;
+border-radius: 10px;
+height: 385px;
+border: 1px solid rgba(204, 204, 204, 0.30);;
+}
+
+.prodetailCard .cardicon{
+color: #00A4EB;
+}
+.prodetailCard .cardpara p{
+    color: #CCC;
+    font-family: 'Eina2';
+    font-size: 16px;
+}
+.pro-body .pro-para{
+    color: #555;
+    font-family: 'Eina2semibold';
+    font-size: 15px;
+    padding-top: 20px;
+}
+.pro-body h3{
+    font-family: 'Eina2semibold';
+    font-size: 20px;
+    color: var(--secondary);
+    padding-top: 20px;
+}
+.pro-body .pro-para1{
+    color: #555;
+    font-family: 'Eina2';
+    font-size: 15px;
+    padding-top: 20px;
+}
+.product-swiper .swiper-pagination{
+    bottom: 0%;
+    display: flex;
+    justify-content: end;
+  
+}
+.product-swiper .swiper-pagination-bullet-active{
+    border-radius: 5px;
+    background: #F1F1F1;
+}
+@media (max-width:1440px) {
+    .product-swiper{
+        padding: 40px 0 40px;
+    }
+    .oserh-lover{
+        background-color: #005571;
+         height: 300px;
+         padding: 20px;
+    }
+
+    .oserh-lover .review{
+        font-size: 16px;
+        padding-top: 15px;
+        padding-bottom: 15px;
+    }
+    .oserh-lover h3{
+        font-size: 25px;
+        padding-bottom: 80px;
+    }
+    .oserh-lover .write{
+        padding: 7px 0;
+        font-size: 15px;
+    }
+    
+    .mySwiper3 .prodetailCard{
+    padding: 20px;
+    height: 300px;
+    }
+    
+.cardicon i{
+    font-size: 10px;
+}
+    .prodetailCard .cardpara p{
+        font-size: 12px;
+    }
+    .pro-body .pro-para{
+        font-size: 11px;
+        padding-top: 10px;
+    }
+    .pro-body h3{
+        font-size: 15px;
+        padding-top: 10px;
+    }
+    .pro-body .pro-para1{
+        font-size: 12px;
+        padding-top: 10px;
+    }
+}
 /* Product Details End */
 
 
@@ -2137,6 +2362,14 @@ footer form label {
 /* Journal End */
 
 @media (max-width:991px) {
+    .journal {
+        padding: 180px 0 60px !important;
+    }
+
+    .juournal-head {
+        padding: 0% !important;
+    }
+
     .journal .journal-heading h3 {
         font-size: 55px;
         margin-bottom: 8px;
@@ -2442,6 +2675,7 @@ footer form label {
     z-index: 1;
     background-repeat: no-repeat;
     background-position-x: center;
+    background-size: contain;
     z-index: 1;
 }
 
@@ -2528,6 +2762,10 @@ footer form label {
     bottom: 0px;
 }
 
+.Journaldetails-content .wave-line {
+    display: none !important;
+}
+
 @media (max-width:991px) {
     .journalPara-section {
         /* padding: 0 0 90px; */
@@ -2537,7 +2775,28 @@ footer form label {
         margin-bottom: -3rem;
         z-index: 1;
     }
+
+    .Journaldetails-content {
+        padding: 9.875rem 0 3rem;
+        background: url(../images/wave.png);
+        margin-top: -20rem;
+        z-index: 1;
+        background-repeat: no-repeat;
+        background-position-x: center;
+        background-size: contain;
+        z-index: 1;
+    }
+
+    .Journaldetails-content .wave-line {
+        display: block !important;
+    }
+
+    .Journaldetails-content .container-fluid {
+        padding: 0% !important;
+    }
+
 }
+
 
 @media (max-width:767px) {
     .journalPara-section {
@@ -2573,18 +2832,22 @@ footer form label {
     background-position: center;
     position: relative;
 }
+
 .product::before {
     content: "";
     position: absolute;
-    bottom: -2rem;
+    bottom: 0;
     left: 0;
     right: 0;
     width: 100%;
     height: 100%;
-    opacity: 0.25;
+    opacity: 0.3;
     z-index: 1;
     background: linear-gradient(180deg, #FFF 36.35%, rgba(255, 255, 255, 0.00) 50.31%, #FFF 63.7%);
 }
+
+
+
 
 .product .product-heading {
     position: absolute;
@@ -3456,9 +3719,10 @@ footer form label {
     z-index: -1;
 }
 
-.thank-details{
+.thank-details {
     z-index: 3;
 }
+
 .thank-details h1 {
     color: #005674;
     font-family: 'Eina2-light';
@@ -3735,24 +3999,29 @@ footer form label {
     font-family: 'Eina2';
     font-size: 20px;
 }
-.cpntact .block i{
+
+.cpntact .block i {
     color: #000
 }
-.contact .dropdown ul{
-width: 100% !important;
-border-radius: 0%;
-border: none !important;
+
+.contact .dropdown ul {
+    width: 100% !important;
+    border-radius: 0%;
+    border: none !important;
 
 }
-.contact .dropdown .dropdown-item{
+
+.contact .dropdown .dropdown-item {
     color: #555;
     margin: 10px;
     background-color: transparent;
 }
-.contact textarea{
+
+.contact textarea {
     resize: none;
 }
-.contact .btn{
+
+.contact .btn {
     background-color: #005674;
     padding: 20px;
     width: 100%;
@@ -3761,26 +4030,31 @@ border: none !important;
     font-family: 'Eina2';
     margin-top: 50px;
 }
-.contact .btn:hover{
+
+.contact .btn:hover {
     background-color: #CDA17F;
 }
 
-.contact .col-lg-8{
-    padding: 0%;
-} 
-.contact .col-lg-4{
+.contact .col-lg-8 {
     padding: 0%;
 }
-.contact .contact-info{
+
+.contact .col-lg-4 {
+    padding: 0%;
+}
+
+.contact .contact-info {
     background: #F9F9F9;
     padding: 100px 50px;
 }
-.contact .contact-info h3{
+
+.contact .contact-info h3 {
     color: #005674;
     font-family: 'Eina2-light';
     font-size: 50px;
 }
-.contact .contact-info .para{
+
+.contact .contact-info .para {
     color: #000;
     font-family: 'Eina2-light';
     font-size: 25px;
@@ -3788,39 +4062,44 @@ border: none !important;
     /* padding-bottom: 20px; */
     border-bottom: 1px solid rgba(85, 85, 85, 0.33);
 }
-.contact .contact-details .sec{
+
+.contact .contact-details .sec {
     color: #000;
     font-family: 'Eina2-light';
     font-size: 25px;
     padding: 50px 0 50px;
 }
-.contact .contact-details p
- {
-    font-family: 'Eina2';
-    font-size: 25px;
-    color: #000;    
-}
-.contact .contact-details a{
+
+.contact .contact-details p {
     font-family: 'Eina2';
     font-size: 25px;
     color: #000;
 }
 
-.contact-details .email{
+.contact .contact-details a {
+    font-family: 'Eina2';
+    font-size: 25px;
+    color: #000;
+}
+
+.contact-details .email {
     border-bottom: 1px solid rgba(85, 85, 85, 0.33);
     padding: 0px 0 50px;
-    
+
 }
-.contact .contact-icons{
+
+.contact .contact-icons {
     padding-bottom: 380px;
 }
-.contact .contact-icons p{
+
+.contact .contact-icons p {
     font-family: 'Eina2-light';
     color: #000;
     font-size: 25px;
     padding: 50px 0 50px;
 }
-.contact .contact-icons i{
+
+.contact .contact-icons i {
     color: #979797;
     font-size: 20px;
     margin-right: 22px;
@@ -3831,70 +4110,79 @@ border: none !important;
     .contact .get-inTouch {
         padding: 70px;
     }
-    
+
     .contact .get-inTouch h3 {
         font-size: 40px;
     }
-    
+
     .contact .get-inTouch p {
         font-size: 20px;
         margin-top: 15px;
     }
-    
+
     .contact .form-control {
 
         font-size: 17px;
         margin-top: 30px;
         padding: 30px 25px;
     }
-    
+
     .contact .block {
         margin-top: 30px;
         padding: 30px 25px;
         font-size: 17px;
     }
 
-    .contact .btn{
+    .contact .btn {
         padding: 16px;
         font-size: 17px;
         margin-top: 30px;
     }
 
 
-    .contact .contact-info{
+    .contact .contact-info {
         background: #F9F9F9;
         padding: 55px 40px;
     }
-    .contact .contact-info h3{
+
+    .contact .contact-info h3 {
         font-size: 35px;
     }
-    .contact .contact-info .para{
+
+    .contact .contact-info .para {
         font-size: 20px;
         padding: 30px 0 30px;
 
     }
-    .contact .contact-details .sec{
+
+    .contact .contact-details .sec {
         font-size: 20px;
         padding: 30px 0 30px;
     }
-    .contact .contact-details p{
-        font-size: 20px; 
+
+    .contact .contact-details p {
+        font-size: 20px;
     }
-    .contact .contact-details a{
-        font-size: 20px; 
+
+    .contact .contact-details a {
+        font-size: 20px;
     }
-    .contact-details .email{
+
+    .contact-details .email {
         padding: 0px 0 30px;
-        
+
     }
-    .contact .contact-icons{
+
+    .contact .contact-icons {
         padding-bottom: 300px;
     }
-    .contact .contact-icons p{
+
+    .contact .contact-icons p {
         font-size: 20px;
         padding: 30px 0 30px;
     }
-    .contact .contact-icons i{
+
+    .contact .contact-icons i {
         font-size: 18px;
         margin-right: 20px;
     }
@@ -3905,9 +4193,10 @@ border: none !important;
 
 
 /* Our Ingredients */
-.ingredients{
+.ingredients {
     padding: 7.4rem 0 3rem
 }
+
 .ingredients .wave-line {
     position: absolute;
     top: 5px;
@@ -3937,24 +4226,27 @@ border: none !important;
     margin-right: 10px;
     color: #D9D9D9;
 }
-.ingredients .ingredients-heading{
+
+.ingredients .ingredients-heading {
     text-align: center;
-   padding: 60px 0 60px;
+    padding: 60px 0 60px;
 }
-.ingredients .ingredients-heading h1{
+
+.ingredients .ingredients-heading h1 {
     color: #005674;
     font-family: 'Eina2-light';
     font-size: 80px;
     padding: 0 100px 0 100px;
 }
-.ingredients .ingredients-heading p{
+
+.ingredients .ingredients-heading p {
     padding-top: 40px;
     color: #000;
     font-family: 'Eina2';
     font-size: 20px;
 }
 
-.ingredients-images{
+.ingredients-images {
     background-image: none;
 }
 
@@ -3965,45 +4257,52 @@ border: none !important;
     margin-left: 10px;
 }
 
-.ingredients-content{
+.ingredients-content {
     padding: 70px 0 70px;
 }
-.ingredients-content .philosophy h3{
+
+.ingredients-content .philosophy h3 {
     color: #1D252E;
     font-family: 'Eina2-light';
     font-size: 40px;
 }
-.ingredients-content .philosophy-para{
+
+.ingredients-content .philosophy-para {
     margin-top: 50px;
     font-family: 'Eina2';
     color: #000;
     font-size: 20px;
 }
-.ingredients-content .philosophy-img{
+
+.ingredients-content .philosophy-img {
     height: 800px;
     width: 100%;
     object-fit: cover;
     margin-top: 70px;
 }
-.ingredients-content .philosophy h4{
+
+.ingredients-content .philosophy h4 {
     color: #005674;
     font-family: 'Eina2-light';
     font-size: 40px;
     margin-top: 70px;
 }
-.ingredients-content .philosophy .efficacy-para{
+
+.ingredients-content .philosophy .efficacy-para {
     font-size: 20px;
     color: #000;
     font-family: 'Eina2';
     margin-top: 50px;
 }
-.ingredients-content .philosophy .para{
+
+.ingredients-content .philosophy .para {
     font-size: 20px;
     color: #000;
     font-family: 'Eina2';
     margin: 50px 0 30px;
     text-align: center;
 }
+
 .ingredients-content .wave-line {
     position: absolute;
     /* top: 0px; */
@@ -4014,33 +4313,42 @@ border: none !important;
     /* z-index: 2; */
     /* margin-top: 70px; */
 }
-.ingredients-content .Ingredient-Glossary{
+
+.ingredients-content .Ingredient-Glossary {
     margin-top: 260px;
 }
-.ingredients-content .Ingredient-Glossary h3{
+
+.ingredients-content .Ingredient-Glossary h3 {
     text-align: center;
     font-family: 'Eina2-light';
     font-size: 40px;
     color: #005674;
 }
-.a-section .col-lg-5, .col-lg-7{
+
+.a-section .col-lg-5,
+.col-lg-7 {
     margin-top: 70px;
 }
-.a-section .a-section-span span{
+
+
+.a-section .a-section-span {
     display: flex;
     align-items: center;
-    color: #6FCFEB;
-    font-family: 'Eina2-light';
-    font-size: 20px;
-    gap: 20px;
 }
-.a-section .a-section-span p{
+.a-section .a-section-span span{
+ width: 30px;
+ color: #6FCFEB;
+ font-family: 'Eina2-light';
+ font-size: 20px;
+}
+.a-section .a-section-span p {
     /* padding-left: 20px; */
     font-family: 'Eina2-light';
     font-size: 20px;
     color: #005674;
 }
-.a-section .para{
+
+.a-section .para {
     color: #000;
     font-family: 'Eina2';
     font-size: 15px;
@@ -4048,307 +4356,504 @@ border: none !important;
 
 
 @media (max-width:1440px) {
-    .ingredients .ingredients-heading{
-       padding: 50px 0 50px;
+    .ingredients .ingredients-heading {
+        padding: 50px 0 50px;
     }
-    .ingredients .ingredients-heading h1{
+
+    .ingredients .ingredients-heading h1 {
         font-size: 50px;
         padding: 0 50px 0 30px;
     }
-    .ingredients .ingredients-heading p{
+
+    .ingredients .ingredients-heading p {
         padding-top: 30px;
         font-size: 20px;
     }
-    
-    
-    .ingredients-content{
+
+
+    .ingredients-content {
         padding: 50px 0 50px;
     }
-    .ingredients-content .philosophy h3{
+
+    .ingredients-content .philosophy h3 {
         font-size: 30px;
     }
-    .ingredients-content .philosophy-para{
+
+    .ingredients-content .philosophy-para {
         margin-top: 30px;
         font-size: 17px;
     }
-    .ingredients-content .philosophy-img{
+
+    .ingredients-content .philosophy-img {
         height: 500px;
         margin-top: 50px;
     }
-    .ingredients-content .philosophy h4{
+
+    .ingredients-content .philosophy h4 {
         font-size: 30px;
         margin-top: 50px;
     }
-    .ingredients-content .philosophy .efficacy-para{
+
+    .ingredients-content .philosophy .efficacy-para {
         font-size: 17px;
         margin-top: 30px;
     }
-    .ingredients-content .philosophy .para{
+
+    .ingredients-content .philosophy .para {
         font-size: 17px;
         margin: 30px 0 30px;
     }
 
-    .ingredients-content .Ingredient-Glossary{
+    .ingredients-content .Ingredient-Glossary {
         margin-top: 180px;
     }
-    .ingredients-content .Ingredient-Glossary h3{
+
+    .ingredients-content .Ingredient-Glossary h3 {
         font-size: 30px;
     }
-    .a-section .col-lg-5, .col-lg-7{
+
+    .a-section .col-lg-5,
+    .col-lg-7 {
         margin-top: 50px;
     }
-    .a-section .a-section-span span{
+
+    .a-section .a-section-span span {
         font-size: 17px;
         gap: 20px;
     }
-    .a-section .a-section-span p{
+
+    .a-section .a-section-span p {
         font-size: 17px;
     }
-    .a-section .para{
+
+    .a-section .para {
         font-size: 15px;
     }
 }
+
 /* Our Ingredients End */
 
 /* FAQ's */
 
-.faqs-heading p{
-padding-top: 60px !important;
+.faqs-heading p {
+    padding-top: 60px !important;
 }
 
-.faqs-accordion .accordion-heading h1{
+.faqs-accordion .accordion-heading h1 {
     color: #005674;
     font-size: 40px;
     font-family: 'Eina2';
     margin-bottom: 30px;
     margin-top: 30px;
 }
-.faqs-accordion .accordion-item{
+
+.faqs-accordion .accordion-item {
     border: none !important;
-  padding-bottom: 20px;
+    padding-bottom: 20px;
 }
-.faqs-accordion .accordion-item .accordion-button{
+
+.faqs-accordion .accordion-item .accordion-button {
     background-color: #F4F4F4;
     box-shadow: none !important;
     color: #005571;
     font-family: 'Eina2';
     font-size: 20px;
 }
-.faqs-accordion .accordion-button:hover{
-    background-color: #CDA17F; 
-    color: var(--white); 
+
+.faqs-accordion .accordion-button:hover {
+    background-color: #CDA17F;
+    color: var(--white);
 }
 
 
-.faqs-accordion .accordion-body p{
+.faqs-accordion .accordion-body p {
     color: #555;
     font-family: 'Eina2';
     font-size: 20px;
 }
 
 @media (max-width:1440px) {
-    .faqs-heading p{
+    .faqs-heading p {
         padding-top: 30px !important;
         font-size: 16px !important;
-        }
-            
-            .faqs-accordion .accordion-heading h1{
-                font-size: 30px;
-                margin-bottom: 20px;
-                margin-top: 20px;
-            }
-            .faqs-accordion .accordion-item{
-              padding-bottom: 15px;
-            }
-            .faqs-accordion .accordion-item .accordion-button{
-                font-size: 17px;
-            }
-            .faqs-accordion .accordion-button:hover{
-                background-color: #CDA17F; 
-                color: var(--white); 
-            }
-            
-            
-            .faqs-accordion .accordion-body p{
-                color: #555;
-                font-family: 'Eina2';
-                font-size: 16px;
-            }
+    }
+
+    .faqs-accordion .accordion-heading h1 {
+        font-size: 30px;
+        margin-bottom: 20px;
+        margin-top: 20px;
+    }
+
+    .faqs-accordion .accordion-item {
+        padding-bottom: 15px;
+    }
+
+    .faqs-accordion .accordion-item .accordion-button {
+        font-size: 17px;
+    }
+
+    .faqs-accordion .accordion-button:hover {
+        background-color: #CDA17F;
+        color: var(--white);
+    }
+
+
+    .faqs-accordion .accordion-body p {
+        color: #555;
+        font-family: 'Eina2';
+        font-size: 16px;
+    }
 }
+
 /* FAQ's End */
 
 
 /* Distribution */
-.distribution{
-    background-color: bisque;
+
+@media (max-width:992px) {
+    .distribution {
+        padding: 6.875rem 0 5rem !important;
+    }
+
+    .distribution-content {
+        padding: 0% !important;
+    }
 }
+
 /* Distribution End*/
 
 
 
 /* About Us */
-.about-heading h1{
+.about-heading h1 {
     color: var(--secondary) !important;
     font-size: 60px !important;
 }
-.about-content .about-head{
-     padding: 0 0px;
+
+.newlogo-Wrapper {
+    width: 650px;
+    margin: auto;
+    padding: 4rem 0;
 }
+
+.tooltp {
+    width: 185px;
+    text-align: center;
+    display: flex;
+    gap: 20px;
+    margin-left: 5rem;
+    margin-bottom: -4rem;
+    flex-direction: column;
+}
+
+.tooltiwrap {
+    display: flex;
+    margin-top: -2rem;
+    align-items: center;
+}
+
+.tooltp.tooltp2 {
+    margin-left: -1.5rem;
+    margin-bottom: 0rem;
+}
+
+.tooltp.tooltp3 {
+    width: 391px;
+    border-top: 1px solid rgba(85, 85, 85, 0.60);
+    margin-bottom: 0rem;
+}
+
+
+.newlogo-Wrapper .tooltp p {
+    margin: 0;
+    font-size: 20px !important;
+    padding: 0 !important;
+    color: #CCC !important;
+    font-family: 'Eina2';
+    line-height: 1;
+}
+
+.newlogo-Wrapper .tooltp span {
+    margin: 0;
+    font-size: 20px !important;
+    padding: 0 !important;
+    color: #00A4EB !important;
+    font-family: 'Eina2';
+    line-height: 1;
+}
+
+.newlogo-Wrapper .tooltp.tooltp2 span {
+    color: #005674 !important;
+}
+
+.newlogo-Wrapper .tooltp.tooltp3 span {
+    color: #CDA17F !important;
+}
+
+.tooltp .line {
+    width: 1px;
+    height: 58px;
+    margin: auto;
+    background: rgba(85, 85, 85, 0.60);
+}
+
+.new-hover-logo {
+    display: flex;
+    justify-content: center;
+    padding: 50px 0;
+    
+}
+
+.new-hover-logo img {
+    transition: 0.1s ease;
+}
+
+.new-hover-logo img:nth-child(1):hover {
+
+filter: invert(17%) sepia(88%) saturate(2450%) hue-rotate(177deg) brightness(50%) contrast(101%);
+}
+
+.new-hover-logo img:nth-child(2):hover {
+    filter: invert(42%) sepia(96%) saturate(717%) hue-rotate(161deg) brightness(90%) contrast(107%);
+}
+
+.new-hover-logo img:nth-child(3):hover {
+
+filter: invert(35%) sepia(27%) saturate(459%) hue-rotate(344deg) brightness(90%) contrast(87%);
+}
+
+
+.about-content .about-head {
+    padding: 0 0px;
+}
+
 .about-content {
     padding: 7.875rem 0 3rem;
 }
-.about-content .about-oserth{
+
+.about-content .about-oserth {
     margin-top: 70px;
 }
-.about-content .about-oserth p{
+
+.about-content .about-oserth p {
     text-align: center;
-   font-family: 'Eina2-light';
-   font-size: 30px;
-   color: #000;
-   padding: 0 30px 0 30px ;
+    font-family: 'Eina2-light';
+    font-size: 30px;
+    color: #000;
+    padding: 0 30px 0 30px;
 }
-.about-content .about-card{
+
+.about-content .about-card {
     margin: 50px 0 110px;
 }
-.about-card .our-ocean h3{
+
+.about-card .our-ocean h3 {
     color: #005674;
     font-family: 'Eina2-light';
     font-size: 40px;
 }
-.about-card .our-ocean .collect{
+
+.about-card .our-ocean .collect {
     color: #979797;
     padding: 15px 0 15px;
     font-family: 'Eina2-light';
     font-size: 30px;
 }
-.about-card .our-ocean .inspire{
-color: #000;
-font-family: 'Eina2';
-font-size: 18px;
+
+.about-card .our-ocean .inspire {
+    color: #000;
+    font-family: 'Eina2';
+    font-size: 18px;
 
 }
-.about-card .our-ocean .sky{
+
+.about-card .our-ocean .sky {
     color: var(--Blue-Sky, #00A4EB);
 }
-.about-card .our-ocean .earth{
+
+.about-card .our-ocean .earth {
     color: var(--Earth, #CDA17F);
 }
 
-.our-body h3{
-   font-family: 'Eina2-light';
-   font-size: 40px;
-   color: #005674;
+.our-body h3 {
+    font-family: 'Eina2-light';
+    font-size: 40px;
+    color: #005674;
 }
-.our-body p{
+
+.our-body p {
     color: #000;
     font-family: 'Eina2';
     font-size: 20px;
     margin-top: 50px;
 }
-.our-body-img img{
+
+.our-body-img img {
     background-size: cover;
     height: 650px;
 }
 
-.we-care{
+.we-care {
     padding: 70px 0 70px;
 }
-.we-care .wecare-heading h1{
+
+.we-care .wecare-heading h1 {
     font-family: 'Eina2';
     font-size: 65px;
     color: #005674;
     padding-bottom: 50px;
     text-align: center;
 }
-.we-care .wecare-heading p{
+
+.we-care .wecare-heading p {
     font-family: 'Eina2';
     font-size: 20px;
     color: #000;
     text-align: center;
 
 }
-.beautyImg{
+
+.beautyImg {
     margin-top: 70px;
 }
-.beautyImg img{
+
+.beautyImg img {
     height: 400px;
     object-fit: cover;
     width: 100%;
 }
-.beauty-content{
+
+.beauty-content {
     margin-top: 70px;
 }
-.beauty-content h3{
+
+.beauty-content h3 {
     color: #005674;
     font-family: 'Eina2-light';
     font-size: 40px;
 }
-.beauty-content p{
+
+.beauty-content p {
     font-family: 'Eina2';
     font-size: 20px;
     color: #000;
     padding-top: 50px;
 }
+
+.about-mobile{
+    display: none;
+}
+
 /* About Us End*/
 
 
 @media (max-width:1440px) {
-    .about-content .about-oserth{
+    .about-content .about-oserth {
         margin-top: 50px;
     }
-    .about-content .about-oserth p{
-       font-size: 20px;
-       padding: 0 20px 0 20px ;
+
+    .about-content .about-oserth p {
+        font-size: 20px;
+        padding: 0 20px 0 20px;
     }
-    .about-content .about-card{
+
+    .about-content .about-card {
         margin: 30px 0 60px;
     }
-    .about-card .our-ocean h3{
+
+    .about-card .our-ocean h3 {
         font-size: 30px;
     }
-    .about-card .our-ocean .collect{
+
+    .about-card .our-ocean .collect {
         padding: 10px 0 10px;
         font-size: 20px;
     }
-    .about-card .our-ocean .inspire{
-    font-size: 16px;
+
+    .about-card .our-ocean .inspire {
+        font-size: 16px;
     }
-    
-    .our-body h3{
-       font-size: 30px;
+
+    .our-body h3 {
+        font-size: 30px;
     }
-    .our-body p{
+
+    .our-body p {
         font-size: 16px;
         margin-top: 30px;
     }
-    .our-body-img img{
+
+    .our-body-img img {
         height: 440px;
     }
-    
-    .we-care{
+
+    .we-care {
         padding: 50px 0 50px;
     }
-    .we-care .wecare-heading h1{
+
+    .we-care .wecare-heading h1 {
         font-size: 45px;
         padding-bottom: 30px;
     }
-    .we-care .wecare-heading p{
+
+    .we-care .wecare-heading p {
         font-size: 16px;
     }
-    .beautyImg{
+
+    .beautyImg {
         margin-top: 50px;
     }
-    .beautyImg img{
+
+    .beautyImg img {
         height: 300px;
     }
-    .beauty-content{
+
+    .beauty-content {
         margin-top: 50px;
     }
-    .beauty-content h3{
+
+    .beauty-content h3 {
         font-size: 30px;
     }
-    .beauty-content p{
+
+    .beauty-content p {
         font-size: 16px;
         padding-top: 30px;
     }
+}
+
+.faqs-accordion .accordion-item .accordion-button {
+    background-color: #005674;
+    color: var(--white);
+}
+
+.faqs-accordion .accordion-item .accordion-button.collapsed {
+    background: #F4F4F4;
+    color: #005674;
+}
+
+.faqs-accordion .accordion-item .accordion-button.collapsed:hover {
+    background: #CDA17F;
+    color: var(--white);
+}
+
+.faqs-accordion .accordion-item .accordion-button::after {
+    content: "-";
+    background: none;
+    transform: rotate(0deg);
+}
+
+.faqs-accordion .accordion-item .accordion-button.collapsed::after {
+    content: "+";
+}
+
+section.best-seller.cart-product::before {
+    content: '';
+    position: absolute;
+    top: -60px;
+    left: 0;
+    width: 100%;
+    height: 150px;
+    background: url('../images/wavebg.png');
+    background-size: 100% 100%;
 }
