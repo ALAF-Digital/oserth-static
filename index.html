@@ -92,6 +92,7 @@
                                 class="fa-solid fa-magnifying-glass"></i></a></li>
                     <li><a href="#"><i class="fa-regular fa-user"></i></a></li>
                     <li><a href="my-cart.html"><i class="fa-solid fa-bag-shopping"></i></a></li>
+                    <li><a href="#" type="button" data-bs-toggle="offcanvas"><i class="fa-solid fa-bag-shopping"></i></a></li>
                 </ul>
             </div>
         </div>
@@ -952,19 +953,116 @@
 
 
     <!-- My Cart Mobile -->
+    <section class="mobilecart">
+        <!-- <button class="btn btn-primary" type="button"  data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight"
+            aria-controls="offcanvasRight">Toggle right offcanvas</button> -->
 
-    <!-- <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">Toggle right offcanvas</button>
+        <div class="offcanvas offcanvas-end"  tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+            <div class="offcanvas-header">
 
-<div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
-  <div class="offcanvas-header">
-    <h5 id="offcanvasRightLabel">Offcanvas right</h5>
-    <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-  </div>
-  <div class="offcanvas-body">
-    
-  </div>
-</div> -->
+                <h5 id="offcanvasRightLabel">Cart</h5>
+                <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"
+                    aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+                <div class="head">
+                    <img src="assets/images/cartheader.png" alt="">
+                    <p>User Name</p>
+                </div>
 
+
+                <div class="cart-deta">
+                    <div class="cart-data d-flex mb-4">
+                        <img src="assets/images/cartoil.png" alt="">
+                        <div class="cart-cont">
+                            <h4>Oserth Fortify</h4>
+                            <p>Smooth Shampoo 300ml</p>
+                        </div>
+                        <a href="#"><i class="fa-solid fa-x"></i></a>
+                    </div>
+
+                    <div class="cart-data d-flex mb-4">
+                        <img src="assets/images/cartoil.png" alt="">
+                        <div class="cart-cont">
+                            <h4>Oserth Fortify</h4>
+                            <p>Smooth Shampoo 300ml</p>
+                        </div>
+                        <a href="#"><i class="fa-solid fa-x"></i></a>
+                    </div>
+
+
+                    <div class="cart-data d-flex mb-4">
+                        <img src="assets/images/cartoil.png" alt="">
+                        <div class="cart-cont">
+                            <h4>Oserth Fortify</h4>
+                            <p>Smooth Shampoo 300ml</p>
+                        </div>
+                        <a href="#"><i class="fa-solid fa-x"></i></a>
+                    </div>
+
+                    <div class="cart-data d-flex mb-4">
+                        <img src="assets/images/cartoil.png" alt="">
+                        <div class="cart-cont">
+                            <h4>Oserth Fortify</h4>
+                            <p>Smooth Shampoo 300ml</p>
+                        </div>
+                        <a href="#"><i class="fa-solid fa-x"></i></a>
+                    </div>
+                </div>
+
+
+
+                <div class="cart-add">
+                    <div class="cart-data cart-data1 d-flex mb-4">
+                        <img src="assets/images/cartshampoo.png" alt="">
+                        <div class="cart-cont">
+                            <h4>Oserth Fortify</h4>
+                            <p>$ 54.00</p>
+                        </div>
+                        <div class="add-action">
+                            <button class="btn">add</button>
+                        </div>
+                    </div>
+
+                    <div class="cart-data cart-data1 d-flex mb-4">
+                        <img src="assets/images/cartshampoo.png" alt="">
+                        <div class="cart-cont">
+                            <h4>Oserth Fortify</h4>
+                            <p>$ 54.00</p>
+                        </div>
+                        <div class="add-action">
+                            <button class="btn">add</button>
+                        </div>
+                    </div>
+
+                    <div class="cart-data cart-data1 d-flex mb-4">
+                        <img src="assets/images/cartshampoo.png" alt="">
+                        <div class="cart-cont">
+                            <h4>Oserth Fortify</h4>
+                            <p>$ 54.00</p>
+                        </div>
+                        <div class="add-action">
+                            <button class="btn">add</button>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="cart-buttons">
+                    <p>Currency</p>
+                    <div class="buttons">
+                        <button class="btn">USD</button>
+                        <button class="btn">AED</button>
+                        <button class="btn">GBP</button>
+                    </div>
+                </div>
+
+                <div class="checkout">
+                    <button class="btn">Checkout . $200</button>
+                </div>
+            </div>
+        </div>
+    </section>
     <!-- My Cart Mobile End -->
 
 

@@ -262,4 +262,7 @@
     .Inspiration-content .instimages {
         gap: 1rem;
     }
+    .mobilecart .offcanvas{
+        padding: 15px;
+    }
 }
