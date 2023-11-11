@@ -28,9 +28,124 @@
     .container-fluid {
         padding: 0px 40px;
     }
+
+    .newlogo-Wrapper {
+        width: 420px;
+    }
+
+    .new-hover-logo img {
+        max-width: 70px;
+        object-fit: contain;
+    }
+
+    .new-hover-logo img:nth-child(2) {
+        max-width: 60px;
+    }
+
+    .new-hover-logo img:nth-child(3) {
+        max-width: 240px;
+    }
+
+    .tooltp {
+        margin-left: 2rem;
+    }
+
+    .tooltp.tooltp2 {
+        margin-left: -2rem;
+    }
+
+    .tooltp.tooltp3 {
+        width: 200px;
+    }
 }
 
+@media (max-width:992px) {
+    .oserh-lover-card {
+        display: none;
+    }
 
+    .product-swiper {
+        background-color: var(--secondary);
+    }
+
+    .product-swiper .swiper-pagination {
+        justify-content: center;
+        padding-right: 0;
+    }
+
+    .prodetailCard .cardpara p {
+        font-size: 15px;
+    }
+
+    .pro-body .pro-para {
+        color: var(--white);
+        font-size: 14px;
+        padding-top: 17px;
+    }
+
+    .pro-body h3 {
+        font-size: 18px;
+        color: #6FCFEB;
+        padding-top: 17px;
+    }
+
+    .pro-body .pro-para1 {
+        color: var(--white);
+        font-size: 14px;
+    }
+
+    .oserh-lover {
+        height: auto;
+    }
+
+    .oserh-lover h3 {
+        font-size: 25px;
+        padding-bottom: 0px;
+    }
+
+    .swiper.mySwiper3.swiper-initialized.swiper-horizontal.swiper-backface-hidden {
+        padding-bottom: 50px;
+    }
+
+    .oserh-lover.web {
+        display: block;
+    }
+
+    .detail-side {
+        display: none;
+    }
+
+    .seller-card.proDetailImg figure {
+        height: auto;
+    }
+
+    .product-panel-images figure {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        gap: 10px;
+    }
+
+    .product-panel .product-panel-images figure img {
+        margin: 0;
+        max-width: 170px;
+        width: calc(25% - 8px);
+        height: auto;
+    }
+
+    .productcontent {
+        flex-direction: column;
+    }
+
+    .product-panel-images {
+        width: 100%;
+        margin-bottom: 1rem;
+    }
+
+    .produuct-imgdetail .swiper-pagination {
+        display: block;
+    }
+}
 
 
 /*Large Mobile Media Query */
@@ -40,7 +155,8 @@
     .container-fluid {
         padding: 0px 12px;
     }
-    footer .container-fluid{
+
+    footer .container-fluid {
         padding: 0 30px;
     }
 
@@ -57,22 +173,26 @@
         line-height: 1.2;
         max-height: 40px;
     }
-.offcanvas-body .accordion-body a{
-    color: var(--white);
-    font-family: 'Eina2';
-    font-size: 14px;
-}
-.foot-mobilenav .oserth-email{
-    color: var(--white);
-    font-family: 'Eina2';
-    font-size: 18px;
-    letter-spacing: 1.8px;
-}
-.foot-mobilenav .social-link a{
-    margin-right: 15px;
-    font-size: 18px;
-    color: var(--white);
-}
+
+    .offcanvas-body .accordion-body a {
+        color: var(--white);
+        font-family: 'Eina2';
+        font-size: 14px;
+    }
+
+    .foot-mobilenav .oserth-email {
+        color: var(--white);
+        font-family: 'Eina2';
+        font-size: 18px;
+        letter-spacing: 1.8px;
+    }
+
+    .foot-mobilenav .social-link a {
+        margin-right: 15px;
+        font-size: 18px;
+        color: var(--white);
+    }
+
     .main-navigation {
         padding: 10px 0;
         border: 0;
@@ -90,22 +210,27 @@
         display: inline-block;
         margin: 0 auto;
     }
-    .more-links .mobile-logo img{
+
+    .more-links .mobile-logo img {
         border-radius: 0;
         height: 60px;
     }
-    .more-links i{
+
+    .more-links i {
         color: #55555599;
     }
+
     .main-navigation .container-fluid {
         align-items: flex-start;
         padding: 0 5px;
     }
-.mobile-logo1 img{
-    width: 100%;
-    height: 40px !important;
-    border-radius: 0;
-}
+
+    .mobile-logo1 img {
+        width: 100%;
+        height: 40px !important;
+        border-radius: 0;
+    }
+
     .main-navigation ul.more-links {
         gap: 5px;
         width: 90%;
@@ -117,119 +242,133 @@
     li.searchbtn-menu {
         display: none;
     }
-   .main-hero .text-caption{
-    margin-top: -250px;
-   }
+
+    .main-hero .text-caption {
+        margin-top: -250px;
+    }
 
 
-   .about-section {
-    padding: 3.875rem 0 3.875rem;
-}
-.about-section .essence-head h1 {
-    font-size: 27px;
-}
-.about-section p {
-    font-size: 14px;
-}
-.about-section .essence-friendly{
-    text-align: center;
-}
-.about-section .essence-friendly img {
-    width: 40px;
-    height: 40px;
-}
-.about-section .essence-friendly h3 {
-    padding: 10px 0;
-    font-size: 18px;
-}
-.essence-friendly .friendly-para{
-    font-size: 10px;
-}
+    .about-section {
+        padding: 3.875rem 0 3.875rem;
+    }
+
+    .about-section .essence-head h1 {
+        font-size: 27px;
+    }
+
+    .about-section p {
+        font-size: 14px;
+    }
+
+    .about-section .essence-friendly {
+        text-align: center;
+    }
+
+    .about-section .essence-friendly img {
+        width: 40px;
+        height: 40px;
+    }
+
+    .about-section .essence-friendly h3 {
+        padding: 10px 0;
+        font-size: 18px;
+    }
+
+    .essence-friendly .friendly-para {
+        font-size: 10px;
+    }
 
 
-.vegan-content {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    gap: 1rem;
-    position: relative;
-    z-index: 1;
-}
+    .vegan-content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 1rem;
+        position: relative;
+        z-index: 1;
+    }
 
-.vegan-content h3 {
-    font-size: 1.8rem;
-}
+    .vegan-content h3 {
+        font-size: 1.8rem;
+    }
 
-.vegan-content p {
-    font-size: 1.2rem;
-}
+    .vegan-content p {
+        font-size: 1.2rem;
+    }
 
-.vegan-content a {
-    padding: 20px;
-    letter-spacing: 1px;
-    font-size: 1rem;
-}
-.cta-section .wave-line {
-    bottom: 30px;
-}
-.our-collection{
-    display: none;
-}
-.our-collection-mobile{
-    display: block;
-}
-.our-collection-mobile .collection-head h1{
-    font-size: 30px;
-}
-.our-collection-mobile .collection-head p{
-    font-size: 14px;
-    margin-top: 10px;
-    margin-bottom: 10px;
-}
-.our-collection-mobile .btn{
-    width: 90%;
-}
+    .vegan-content a {
+        padding: 20px;
+        letter-spacing: 1px;
+        font-size: 1rem;
+    }
 
-.our-brand {
-    padding: 25px 0 25px;
-}
+    .cta-section .wave-line {
+        bottom: 30px;
+    }
 
-.our-brand .our-heading h1 {
-    font-size: 40px;
-    max-width: 500px;
-    text-align: center;
-    margin-bottom: 10px;
-}
+    .our-collection {
+        display: none;
+    }
 
-.our-brand .brand-image img {
-    height: 280px;
-}
+    .our-collection-mobile {
+        display: block;
+    }
 
-.our-brand .our-heading1 {
-    font-family: 'Eina2-light';
-    padding: 17px 0px;
-    text-align: center;
-}
+    .our-collection-mobile .collection-head h1 {
+        font-size: 30px;
+    }
 
-.our-brand .our-heading1 h1 {
-    font-size: 30px;
-    margin-bottom: 15px;
-}
+    .our-collection-mobile .collection-head p {
+        font-size: 14px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
 
-.our-brand .our-heading1 p {
-    font-size: 14px;
-    margin-bottom: 15px;
-}
+    .our-collection-mobile .btn {
+        width: 90%;
+    }
 
-.our-brand .our-heading1 a {
-    padding: 15px 30px;
-}
+    .our-brand {
+        padding: 25px 0 25px;
+    }
 
-.Inspiration .head h1 {
-    margin-bottom: 20px;
-    font-size: 30px;
-}
+    .our-brand .our-heading h1 {
+        font-size: 40px;
+        max-width: 500px;
+        text-align: center;
+        margin-bottom: 10px;
+    }
+
+    .our-brand .brand-image img {
+        height: 280px;
+    }
+
+    .our-brand .our-heading1 {
+        font-family: 'Eina2-light';
+        padding: 17px 0px;
+        text-align: center;
+    }
+
+    .our-brand .our-heading1 h1 {
+        font-size: 30px;
+        margin-bottom: 15px;
+    }
+
+    .our-brand .our-heading1 p {
+        font-size: 14px;
+        margin-bottom: 15px;
+    }
+
+    .our-brand .our-heading1 a {
+        padding: 15px 30px;
+    }
+
+    .Inspiration .head h1 {
+        margin-bottom: 20px;
+        font-size: 30px;
+    }
+
     .Inspiration-content .instimages {
         flex-wrap: wrap;
         gap: 1.5rem;
@@ -250,10 +389,68 @@
     }
 
 
-    .about-mobile{
+    .about-mobile {
         display: block;
 
         margin-top: 15px;
+    }
+
+
+    .web-cart {
+        display: none;
+    }
+
+    .mob-cart {
+        display: inline-block;
+    }
+
+    .our-body-img img {
+        height: 500px;
+        margin-top: -100%;
+        position: relative;
+        z-index: -1;
+        object-fit: cover;
+    }
+
+    .product-panel.col-7 {
+        width: 100%;
+    }
+
+    section.productBGsection {
+        flex-direction: column-reverse;
+    }
+
+    .productcontent {
+        flex-direction: column-reverse;
+        padding: 0;
+        padding-top: 10px;
+    }
+
+    .product-panel .product-panel-text {
+        padding: 20px;
+        gap: 5px;
+    }
+
+    .proPanelBg {
+        flex: none;
+        height: 400px;
+    }
+
+    .essence-friendly.essence-friendly1 {
+        width: 40%;
+        display: inline-block;
+        margin-bottom: 24px;
+    }
+
+    .vegan-friendly .col-lg-6.d-flex.justify-content-between.text-center {
+        flex-wrap: wrap;
+        display: contents !IMPORTANT;
+        margin: auto;
+    }
+
+    .vegan-friendly .row {
+        display: block;
+        text-align: center;
     }
 }
 
@@ -262,7 +459,48 @@
     .Inspiration-content .instimages {
         gap: 1rem;
     }
-    .mobilecart .offcanvas{
+
+    .mobilecart .offcanvas {
         padding: 15px;
     }
+
+
+    .newlogo-Wrapper {
+        width: 100%;
+    }
+
+    .tooltiwrap {
+        justify-content: center;
+    }
+
+    .new-hover-logo img {
+        max-width: 45px;
+        object-fit: contain;
+    }
+
+    .new-hover-logo img:nth-child(2) {
+        max-width: 34px;
+    }
+
+    .new-hover-logo img:nth-child(3) {
+        max-width: 150px;
+    }
+
+    .tooltp {
+        margin-left: 0rem;
+    }
+
+    .tooltp.tooltp2 {
+        margin-left: -2.5rem;
+        width: 125px;
+    }
+
+    .tooltp.tooltp3 {
+        width: 140px;
+    }
+
+    .proPanelBg {
+        height: 200px;
+    }
+
 }
