@@ -40,7 +40,7 @@
                 <p>Lörem ipsum exonomårar antejåktigt reaskapet. Diledes polingar pålogi, eftersom ultradobel.</p>
             </div>
         </div>
-        <div class="main-navigation">
+        <div class="main-navigation second-navigation">
             <div class="container-fluid">
                 <ul class="social-link">
                     <li>
@@ -92,7 +92,9 @@
                             data-bs-target="#searchTop" aria-controls="searchTop"><i
                                 class="fa-solid fa-magnifying-glass"></i></a></li>
                     <li><a href="#"><i class="fa-regular fa-user"></i></a></li>
-                    <li><a href="my-cart.html"><i class="fa-solid fa-bag-shopping"></i></a></li>
+                    <li class="web-cart"><a href="my-cart.html"><i class="fa-solid fa-bag-shopping"></i></a></li>
+                    <li class="mob-cart"><a href="#" type="button" data-bs-toggle="offcanvas"
+                            data-bs-target="#offcanvasRight"><i class="fa-solid fa-bag-shopping"></i></a></li>
                 </ul>
             </div>
         </div>
@@ -171,17 +173,17 @@
     </header>
     <!-- header end -->
 
-<!-- moblie-section -->
+    <!-- moblie-section -->
     <section class="product-content about-content about-mobile">
         <div class="container-fluid">
-            <div class="detail-head about-head d-flex align-items-center ms-3">
+            <div class="detail-head head-mobile d-flex align-items-center">
                 <p>Home</p>
                 <i class="fa-solid fa-greater-than"></i>
                 <p>About us</p>
             </div>
         </div>
     </section>
-<!-- moblie-section End-->
+    <!-- moblie-section End-->
 
     <section class="product" style="--bgimg: url('../images/thankyoubg.png');">
         <div class="container">
@@ -318,23 +320,22 @@
                 </div>
 
 
-
-                <div class="col-lg-6  d-flex justify-content-center align-items-center">
-                    <div class="beauty-content ">
-                        <h3>Sustainability</h3>
-                        <p>Our goal is to bring back attention to the natural existing world. The value of being
-                            inspired by the Sky, Ocean and Earth. Let’s get inspired by the limitlessness of the
-                            Sky, the balance of the Ocean, the rich strength of the Earth. Let’s get Oserth.</p>
-                    </div>
-                </div>
-
-                <div class="col-lg-6 ">
+            </div>
+            <div class="row sustain">
+                <div class="col-lg-6 order-lg-2">
                     <div class="beautyImg">
                         <img src="assets/images/thankyoubg.png" class="img-fluid" alt="">
                     </div>
                 </div>
-
-
+            
+                <div class="col-lg-6 d-flex justify-content-center align-items-center order-lg-1">
+                    <div class="beauty-content">
+                        <h3>Sustainability</h3>
+                        <p>Our goal is to bring back attention to the natural existing world. The value of being inspired by the Sky, Ocean and Earth. Let’s get inspired by the limitlessness of the Sky, the balance of the Ocean, the rich strength of the Earth. Let’s get Oserth.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
                 <div class="col-lg-6">
                     <div class="beautyImg">
                         <img src="assets/images/aboutsection.png" class="img-fluid" alt="">
@@ -348,24 +349,23 @@
                             the balance of the Ocean, the rich strength of the Earth. Let’s get Oserth.</p>
                     </div>
                 </div>
+            </div>
 
-
-                <div class="col-lg-6 d-flex justify-content-center align-items-center">
-                    <div class="beauty-content">
-                        <h3>Cruelty Free</h3>
-                        <p>Our goal is to bring back attention to the natural existing world. The value of being
-                            inspired by the Sky, Ocean and Earth. Let’s get inspired by the limitlessness of the Sky,
-                            the balance of the Ocean, the rich strength of the Earth. Let’s get Oserth.</p>
-                    </div>
-                </div>
-
-                <div class="col-lg-6">
+            <div class="row cruelty">
+                <div class="col-lg-6 order-lg-2">
                     <div class="beautyImg">
                         <img src="assets/images/aboutsection1.png" class="img-fluid" alt="">
                     </div>
                 </div>
-
+            
+                <div class="col-lg-6 d-flex justify-content-center align-items-center order-lg-1">
+                    <div class="beauty-content">
+                        <h3>Cruelty Free</h3>
+                        <p>Our goal is to bring back attention to the natural existing world. The value of being inspired by the Sky, Ocean and Earth. Let’s get inspired by the limitlessness of the Sky, the balance of the Ocean, the rich strength of the Earth. Let’s get Oserth.</p>
+                    </div>
+                </div>
             </div>
+        </div>
         </div>
     </section>
 
@@ -562,6 +562,121 @@
     </div>
 
     <!-- Mobile navbar End-->
+
+
+
+     <!-- My Cart Mobile -->
+    <section class="mobilecart">
+        <!-- <button class="btn btn-primary" type="button"  data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight"
+            aria-controls="offcanvasRight">Toggle right offcanvas</button> -->
+
+        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+            <div class="offcanvas-header">
+
+                <h5 id="offcanvasRightLabel">Cart</h5>
+                <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"
+                    aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+                <div class="head">
+                    <img src="assets/images/cartheader.png" alt="">
+                    <p>User Name</p>
+                </div>
+
+
+                <div class="cart-deta">
+                    <div class="cart-data d-flex mb-4">
+                        <img src="assets/images/cartoil.png" alt="">
+                        <div class="cart-cont">
+                            <h4>Oserth Fortify</h4>
+                            <p>Smooth Shampoo 300ml</p>
+                        </div>
+                        <a href="#"><i class="fa-solid fa-x"></i></a>
+                    </div>
+
+                    <div class="cart-data d-flex mb-4">
+                        <img src="assets/images/cartoil.png" alt="">
+                        <div class="cart-cont">
+                            <h4>Oserth Fortify</h4>
+                            <p>Smooth Shampoo 300ml</p>
+                        </div>
+                        <a href="#"><i class="fa-solid fa-x"></i></a>
+                    </div>
+
+
+                    <div class="cart-data d-flex mb-4">
+                        <img src="assets/images/cartoil.png" alt="">
+                        <div class="cart-cont">
+                            <h4>Oserth Fortify</h4>
+                            <p>Smooth Shampoo 300ml</p>
+                        </div>
+                        <a href="#"><i class="fa-solid fa-x"></i></a>
+                    </div>
+
+                    <div class="cart-data d-flex mb-4">
+                        <img src="assets/images/cartoil.png" alt="">
+                        <div class="cart-cont">
+                            <h4>Oserth Fortify</h4>
+                            <p>Smooth Shampoo 300ml</p>
+                        </div>
+                        <a href="#"><i class="fa-solid fa-x"></i></a>
+                    </div>
+                </div>
+
+
+
+                <div class="cart-add">
+                    <div class="cart-data cart-data1 d-flex mb-4">
+                        <img src="assets/images/cartshampoo.png" alt="">
+                        <div class="cart-cont">
+                            <h4>Oserth Fortify</h4>
+                            <p>$ 54.00</p>
+                        </div>
+                        <div class="add-action">
+                            <button class="btn">add</button>
+                        </div>
+                    </div>
+
+                    <div class="cart-data cart-data1 d-flex mb-4">
+                        <img src="assets/images/cartshampoo.png" alt="">
+                        <div class="cart-cont">
+                            <h4>Oserth Fortify</h4>
+                            <p>$ 54.00</p>
+                        </div>
+                        <div class="add-action">
+                            <button class="btn">add</button>
+                        </div>
+                    </div>
+
+                    <div class="cart-data cart-data1 d-flex mb-4">
+                        <img src="assets/images/cartshampoo.png" alt="">
+                        <div class="cart-cont">
+                            <h4>Oserth Fortify</h4>
+                            <p>$ 54.00</p>
+                        </div>
+                        <div class="add-action">
+                            <button class="btn">add</button>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="cart-buttons">
+                    <p>Currency</p>
+                    <div class="buttons">
+                        <button class="btn">USD</button>
+                        <button class="btn">AED</button>
+                        <button class="btn">GBP</button>
+                    </div>
+                </div>
+
+                <div class="checkout">
+                    <button class="btn">Checkout . $200</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- My Cart Mobile End -->
 
 
 </body>

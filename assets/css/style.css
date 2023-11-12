@@ -1297,6 +1297,7 @@ header {
 
     .best-seller .seller-card .seller-body .btn {
         padding: 12px 20px;
+        width: 94%;
     }
 
     .seller-card .badge-group li {
@@ -2321,7 +2322,7 @@ footer form label {
     background: #014860;
     font-family: 'Eina2';
     font-size: 18px;
-    width: 80%;
+    width: 100%;
     border: 0;
 }
 

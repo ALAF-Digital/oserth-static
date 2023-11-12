@@ -145,6 +145,53 @@
     .produuct-imgdetail .swiper-pagination {
         display: block;
     }
+
+    .swiper.produuct-imgdetail.swiper-initialized.swiper-horizontal.swiper-backface-hidden {
+        padding-bottom: 50px;
+    }
+
+    .details .detail-head {
+        padding: 0 0px;
+    }
+
+    .details .proDetailImg .promainImg img {
+        min-height: 385px;
+    }
+
+    .details .proDetailImg .product-badge li {
+        width: 75px;
+        height: 75px;
+    }
+
+    .details .proDetailImg .product-badge li p {
+        font-size: 14px;
+    }
+
+    .we-care {
+        padding: 20px 0 20px;
+    }
+
+    .beauty-content {
+        margin-top: 0px;
+        padding: 25px;
+    }
+    .beautyImg {
+        margin-top: 20px;
+    }
+    .we-care .wecare-heading h1 {
+        font-size: 30px;
+        padding-bottom: 20px;
+    }
+    .we-care .wecare-heading p {
+        font-size: 12px;
+    }
+    .beauty-content h3 {
+        font-size: 25px;
+    }
+    .beauty-content p {
+        font-size: 12px;
+        padding-top: 15px;
+    }
 }
 
 
@@ -197,7 +244,9 @@
         padding: 10px 0;
         border: 0;
     }
-
+    .second-navigation{
+        border-bottom: 1px solid #CCCCCC;
+    }
     .navbar-toggler {
         display: inline-block;
         color: #55555599;
@@ -388,13 +437,50 @@
         margin: 0 -3rem;
     }
 
+    .product {
+        height: 435px;
+    }
+
+    .product-content {
+        padding: 1.5rem 0 0rem;
+        /* background: url(../images/wave.png); */
+        margin-top: 0rem;
+        z-index: 2;
+        background-repeat: no-repeat;
+        background-position-x: center;
+        z-index: 2;
+    }
+
+    .about-head {
+        display: none !important;
+    }
 
     .about-mobile {
         display: block;
-
-        margin-top: 15px;
+        margin-top: 110px;
     }
 
+    .about-heading h1 {
+        font-size: 40px !important;
+    }
+
+    .about-content .about-oserth p {
+        font-size: 15px;
+        padding: 0 0px 0 0px;
+    }
+
+    .about-card .our-ocean h3 {
+        font-size: 24px;
+    }
+
+    about-card .our-ocean .collect {
+        padding: 6px 0 6px;
+        font-size: 15px;
+    }
+
+    .about-card .our-ocean .inspire {
+        font-size: 12px;
+    }
 
     .web-cart {
         display: none;
@@ -404,12 +490,21 @@
         display: inline-block;
     }
 
+    .about-content .about-card {
+        margin: 8px 0 14px;
+        padding: 20px;
+    }
+
     .our-body-img img {
-        height: 500px;
-        margin-top: -100%;
+        height: 512px;
+        margin-top: -52%;
         position: relative;
         z-index: -1;
         object-fit: cover;
+    }
+
+    .our-body {
+        padding: 30px;
     }
 
     .product-panel.col-7 {
@@ -444,13 +539,136 @@
 
     .vegan-friendly .col-lg-6.d-flex.justify-content-between.text-center {
         flex-wrap: wrap;
-        display: contents !IMPORTANT;
+        display: contents !important;
         margin: auto;
     }
 
     .vegan-friendly .row {
         display: block;
         text-align: center;
+    }
+
+    .details {
+        padding: 150px 0 60px !important;
+    }
+
+    .details .detail-heading h3 {
+        font-size: 24px;
+        margin-bottom: 4px;
+    }
+
+    .details .detail-heading p {
+        font-size: 15px;
+    }
+
+    .produuct-imgdetail .swiper-pagination-bullet {
+
+        background-color: #005571;
+    }
+
+    .detail-content .review-content>:nth-child(1) {
+        font-size: 15px;
+        padding: 10px 0 10px;
+    }
+
+    .detail-content .review-content strong {
+        font-size: 0.9rem;
+    }
+
+    p {
+        font-size: 0.7rem;
+    }
+
+    .detail-content .review-content .detail-action a {
+        padding: 14px 16px;
+        font-size: 12px;
+    }
+
+    .detail-content .review-content button {
+        padding: 12px 42px;
+        font-size: 15px;
+    }
+
+    .detail-content .delivery p {
+        font-size: 10px;
+    }
+
+    .detail-content .purchase p {
+        font-size: 10px;
+    }
+
+    .essence-friendly img {
+        width: 48px;
+        height: 42px;
+    }
+
+    .vegan-friendly .essence-friendly1 h3 {
+        font-size: 15px;
+    }
+
+    .Accordion-section .accordion-item .accordion-button {
+        font-size: 22px;
+        padding: 5px;
+    }
+
+    .Accordion-section .accordion-body h4 {
+        font-size: 28px;
+    }
+
+    .Accordion-section .accordion-body h3 {
+        font-size: 27px;
+    }
+
+    .product-panel .product-panel-text h1 {
+        font-size: 23px;
+    }
+
+    .product-panel .product-panel-text p {
+        font-size: 14px;
+    }
+
+    .our-body h3 {
+        font-size: 22px;
+    }
+
+    .our-body p {
+        font-size: 12px;
+        margin-top: 20px;
+    }
+
+}
+
+
+
+
+
+
+@media screen and (max-width:576px) {
+    .our-body-img img {
+        height: 570px;
+        margin-top: -48%;
+        position: relative;
+        z-index: -1;
+        object-fit: cover;
+    }
+}
+
+@media (max-width:476px) {
+    .our-body-img img {
+        height: 570px;
+        margin-top: -68%;
+        position: relative;
+        object-fit: cover;
+    }
+
+}
+
+@media (max-width:426px) {
+    .our-body-img img {
+        height: 800px;
+        margin-top: -80%;
+        position: relative;
+        object-fit: cover;
     }
 }
 
@@ -503,4 +721,25 @@
         height: 200px;
     }
 
+    .our-body-img img {
+        margin-top: -105%;
+        position: relative;
+        object-fit: cover;
+    }
+}
+
+@media (max-width:376px) {
+    .our-body-img img {
+        margin-top: -104%;
+        position: relative;
+        object-fit: cover;
+    }
+}
+
+@media (max-width:345px) {
+    .our-body-img img {
+        margin-top: -144%;
+        position: relative;
+        object-fit: cover;
+    }
 }
