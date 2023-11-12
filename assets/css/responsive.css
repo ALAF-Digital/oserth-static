@@ -256,13 +256,13 @@
     .contact {
         /* padding: 0 0 90px; */
         background: url(../images/contactwave.png) no-repeat;
-        padding: 13.875rem 0 5rem;
-        margin-top: -8rem;
+        padding: 3.875rem 0 2rem;
+        margin-top: -1rem;
         background-repeat: no-repeat;
         background-position-x: center;
         z-index: 1;
         position: relative;
-
+        background-size: contain;
     }
     .mobile-card{
         display: block;
@@ -843,7 +843,7 @@
         transform: translate(-50%, -50%);
         color: #323E48;
         font-family: 'flatline';
-        font-size: 40px;
+        font-size: 36px;
         text-align: center;
     }
     .cart-content .cart-shipped h1 {
@@ -902,6 +902,63 @@
     .cart-total .secure p {
         margin-top: 25px;
         font-size: 14px;
+    }
+    .contact .get-inTouch {
+        padding: 30px;
+    }
+    .contact .get-inTouch h3 {
+        font-size: 25px;
+    }
+    .contact .get-inTouch p {
+        font-size: 15px;
+        margin-top: 12px;
+    }
+    .contact .form-control {
+        font-size: 17px;
+        margin-top: 15px;
+        padding: 20px 20px;
+    }
+    .contact .block {
+        margin-top: 15px;
+        padding: 20px 20px;
+        font-size: 17px;
+    }
+    .contact .btn {
+        padding: 14px;
+        font-size: 15px;
+        margin-top: 20px;
+    }
+    .contact .contact-info {
+        background: #F9F9F9;
+        padding: 30px 30px;
+    }
+    .contact .contact-info h3 {
+        font-size: 25px;
+    }
+    .contact .contact-info .para {
+        font-size: 14px;
+        padding: 15px 0 15px;
+    }
+    .contact .contact-details .sec {
+        font-size: 18px;
+        padding: 15px 0 15px;
+    }
+    .contact .contact-details p {
+        font-size: 16px;
+    }
+    .contact .contact-details a {
+        font-size: 16px;
+    }
+    .contact .contact-icons p {
+        font-size: 16px;
+        padding: 15px 0 15px;
+    }
+    .contact .contact-icons i {
+        font-size: 15px;
+        margin-right: 18px;
+    }
+    .contact .contact-icons {
+        padding-bottom: 0px;
     }
 }
 
