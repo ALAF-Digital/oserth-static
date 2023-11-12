@@ -2176,6 +2176,16 @@ footer form label {
     padding: 25px;
 }
 
+.accordion-buttons .accordion-item .accordion-button::after {
+    content: "-";
+    background: none;
+    transform: rotate(0deg);
+}
+
+.accordion-buttons .accordion-item .accordion-button.collapsed::after {
+    content: "+";
+}
+
 .Accordion-section .accordion-buttons button:hover {
     background-color: #5CCBF2 !important;
     color: var(--white);
@@ -2579,7 +2589,7 @@ footer form label {
     }
 
     .journal .journal-heading h3 {
-        font-size: 55px;
+        font-size: 55px !important;
         margin-bottom: 8px;
     }
 
@@ -2634,12 +2644,12 @@ footer form label {
 
 @media (max-width:767px) {
     .journal .journal-heading h3 {
-        font-size: 45px;
+        font-size: 45px !important;
         margin-bottom: 8px;
     }
 
     .journal .journal-heading p {
-        font-size: 18px;
+        font-size: 18px !important;
     }
 
     .journal .journal-mainText h3 {
@@ -2705,12 +2715,12 @@ footer form label {
     }
 
     .journal .journal-heading h3 {
-        font-size: 30px;
+        font-size: 30px !important;
         margin-bottom: 6px;
     }
 
     .journal .journal-heading p {
-        font-size: 14px;
+        font-size: 14px !important;
     }
 
     .journal .journal-mainText h3 {
@@ -2745,7 +2755,7 @@ footer form label {
 
     .journal .journal-card h3 {
         font-size: 1rem;
-        margin: 14px 0 24px;
+        margin: 14px 0 20px;
     }
 
     .journal .journal-card p {
@@ -2755,7 +2765,7 @@ footer form label {
 
     .journal .journal-card .card-action {
         padding: 6px 9px;
-        font-size: 0.75;
+        font-size: 0.75rem;
         border-radius: 5px;
     }
 
@@ -2985,16 +2995,21 @@ footer form label {
     }
 
     .Journaldetails-content {
-        padding: 9.875rem 0 3rem;
+        padding: 1.875rem 0 0rem;
         background: url(../images/wave.png);
-        margin-top: -20rem;
+        margin-top: -5rem;
         z-index: 1;
         background-repeat: no-repeat;
         background-position-x: center;
         background-size: contain;
         z-index: 1;
     }
-
+    .Journaldetails {
+        padding: 60px 0 0px;
+    }
+    .Journaldetails-content .web-head{
+        display: none !important;
+    }
     .Journaldetails-content .wave-line {
         display: block !important;
     }
@@ -3681,6 +3696,9 @@ footer form label {
     background-image: none;
     margin-top: 30px;
 }
+.mobile-card{
+    display: none;
+}
 
 @media (max-width: 1440px) {
     .cart-content .cart-details {
@@ -3795,7 +3813,7 @@ footer form label {
     }
 }
 
-@media (max-width: 767px) {
+/* @media (max-width: 767px) {
     .cart-content .cart-details {
         flex-direction: column;
         text-align: center;
@@ -3866,7 +3884,7 @@ footer form label {
     .cart-total .secure img {
         width: 40px;
     }
-}
+} */
 
 
 /* My Cart End */
@@ -5057,6 +5075,7 @@ footer form label {
     content: "+";
 }
 
+
 section.best-seller.cart-product::before {
     content: '';
     position: absolute;
@@ -5067,3 +5086,54 @@ section.best-seller.cart-product::before {
     background: url('../images/wavebg.png');
     background-size: 100% 100%;
 }
+
+
+
+/* Canva */
+.canava{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    
+}
+.canva-category {
+    display: none;
+    padding: 20px 0 20px;
+}
+.canva-category .offcanvas {
+    border-radius: 20px 20px 0 0;
+    margin: 0px 10px 0 10px;
+    text-align: center;
+    min-height: 300px; 
+}
+.canva-category .offcanvas-body {
+    padding: 0%;
+    display: flex;
+    flex-direction: column;
+}
+.canva-category .offcanvas-body .btn{
+    color: #000;
+    font-family: 'Eina2';
+    font-size: 14px;
+    padding: 15px 10px;
+}
+.canva-category .offcanvas-body .btn:hover{
+    background-color: #CDA17F;
+    color: var(--white);
+}
+.canvabutton{
+    background-color: #F1F1F1;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 40%;
+    font-family: 'Eina2';
+    font-size: 14px;
+}
+.canvabutton:hover{
+    background-color: #CDA17F;
+    color: var(--white);
+}
+
+/* Canva End */

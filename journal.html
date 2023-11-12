@@ -13,6 +13,7 @@
     <!-- Custom CSS -->
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="assets/css/responsive.css">
+
 </head>
 
 <body>
@@ -33,13 +34,13 @@
     <!-- search area end -->
 
     <!-- header -->
-    <header>
+    <header class="second-navigation">
         <div class="top-bar">
             <div class="container">
                 <p>Lörem ipsum exonomårar antejåktigt reaskapet. Diledes polingar pålogi, eftersom ultradobel.</p>
             </div>
         </div>
-        <div class="main-navigation">
+        <div class="main-navigation ">
             <div class="container-fluid">
                 <ul class="social-link">
                     <li>
@@ -82,16 +83,18 @@
                             <li><a class="dropdown-item" href="#">GBP</a></li>
                         </ul>
                     </li>
-                    <li class="mobile-logo">
+                    <li class="mobile-logo mobile-logo1">
                         <a href="index.html" class="navbar-brand">
-                            <img src="assets/images/mobilelogo.png" class="img-fluid " alt="">
+                            <img src="assets/images/mobilelogo1.svg" class="img-fluid " alt="">
                         </a>
                     </li>
                     <li class="searchbtn-menu"><a href="#" type="button" data-bs-toggle="offcanvas"
                             data-bs-target="#searchTop" aria-controls="searchTop"><i
                                 class="fa-solid fa-magnifying-glass"></i></a></li>
                     <li><a href="#"><i class="fa-regular fa-user"></i></a></li>
-                    <li><a href="my-cart.html"><i class="fa-solid fa-bag-shopping"></i></a></li>
+                    <li class="web-cart"><a href="my-cart.html"><i class="fa-solid fa-bag-shopping"></i></a></li>
+                    <li class="mob-cart"><a href="#" type="button" data-bs-toggle="offcanvas"
+                            data-bs-target="#offcanvasRight"><i class="fa-solid fa-bag-shopping"></i></a></li>
                 </ul>
             </div>
         </div>
@@ -169,6 +172,7 @@
         </nav>
     </header>
     <!-- header end -->
+
 
     <!-- Journal -->
 
@@ -557,6 +561,119 @@
 
 <!-- Mobile navbar End-->
 
+
+<!-- My Cart Mobile -->
+<section class="mobilecart">
+    <!-- <button class="btn btn-primary" type="button"  data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight"
+        aria-controls="offcanvasRight">Toggle right offcanvas</button> -->
+
+    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+        <div class="offcanvas-header">
+
+            <h5 id="offcanvasRightLabel">Cart</h5>
+            <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"
+                aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+            <div class="head">
+                <img src="assets/images/cartheader.png" alt="">
+                <p>User Name</p>
+            </div>
+
+
+            <div class="cart-deta">
+                <div class="cart-data d-flex mb-4">
+                    <img src="assets/images/cartoil.png" alt="">
+                    <div class="cart-cont">
+                        <h4>Oserth Fortify</h4>
+                        <p>Smooth Shampoo 300ml</p>
+                    </div>
+                    <a href="#"><i class="fa-solid fa-x"></i></a>
+                </div>
+
+                <div class="cart-data d-flex mb-4">
+                    <img src="assets/images/cartoil.png" alt="">
+                    <div class="cart-cont">
+                        <h4>Oserth Fortify</h4>
+                        <p>Smooth Shampoo 300ml</p>
+                    </div>
+                    <a href="#"><i class="fa-solid fa-x"></i></a>
+                </div>
+
+
+                <div class="cart-data d-flex mb-4">
+                    <img src="assets/images/cartoil.png" alt="">
+                    <div class="cart-cont">
+                        <h4>Oserth Fortify</h4>
+                        <p>Smooth Shampoo 300ml</p>
+                    </div>
+                    <a href="#"><i class="fa-solid fa-x"></i></a>
+                </div>
+
+                <div class="cart-data d-flex mb-4">
+                    <img src="assets/images/cartoil.png" alt="">
+                    <div class="cart-cont">
+                        <h4>Oserth Fortify</h4>
+                        <p>Smooth Shampoo 300ml</p>
+                    </div>
+                    <a href="#"><i class="fa-solid fa-x"></i></a>
+                </div>
+            </div>
+
+
+
+            <div class="cart-add">
+                <div class="cart-data cart-data1 d-flex mb-4">
+                    <img src="assets/images/cartshampoo.png" alt="">
+                    <div class="cart-cont">
+                        <h4>Oserth Fortify</h4>
+                        <p>$ 54.00</p>
+                    </div>
+                    <div class="add-action">
+                        <button class="btn">add</button>
+                    </div>
+                </div>
+
+                <div class="cart-data cart-data1 d-flex mb-4">
+                    <img src="assets/images/cartshampoo.png" alt="">
+                    <div class="cart-cont">
+                        <h4>Oserth Fortify</h4>
+                        <p>$ 54.00</p>
+                    </div>
+                    <div class="add-action">
+                        <button class="btn">add</button>
+                    </div>
+                </div>
+
+                <div class="cart-data cart-data1 d-flex mb-4">
+                    <img src="assets/images/cartshampoo.png" alt="">
+                    <div class="cart-cont">
+                        <h4>Oserth Fortify</h4>
+                        <p>$ 54.00</p>
+                    </div>
+                    <div class="add-action">
+                        <button class="btn">add</button>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="cart-buttons">
+                <p>Currency</p>
+                <div class="buttons">
+                    <button class="btn">USD</button>
+                    <button class="btn">AED</button>
+                    <button class="btn">GBP</button>
+                </div>
+            </div>
+
+            <div class="checkout">
+                <button class="btn">Checkout . $200</button>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- My Cart Mobile End -->
 
 </body>
 

@@ -13,6 +13,7 @@
     <!-- Custom CSS -->
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="assets/css/responsive.css">
+
 </head>
 
 <body>
@@ -33,13 +34,13 @@
     <!-- search area end -->
 
     <!-- header -->
-    <header>
+    <header class="second-navigation">
         <div class="top-bar">
             <div class="container">
                 <p>Lörem ipsum exonomårar antejåktigt reaskapet. Diledes polingar pålogi, eftersom ultradobel.</p>
             </div>
         </div>
-        <div class="main-navigation">
+        <div class="main-navigation ">
             <div class="container-fluid">
                 <ul class="social-link">
                     <li>
@@ -82,16 +83,18 @@
                             <li><a class="dropdown-item" href="#">GBP</a></li>
                         </ul>
                     </li>
-                    <li class="mobile-logo">
+                    <li class="mobile-logo mobile-logo1">
                         <a href="index.html" class="navbar-brand">
-                            <img src="assets/images/mobilelogo.png" class="img-fluid " alt="">
+                            <img src="assets/images/mobilelogo1.svg" class="img-fluid " alt="">
                         </a>
                     </li>
                     <li class="searchbtn-menu"><a href="#" type="button" data-bs-toggle="offcanvas"
                             data-bs-target="#searchTop" aria-controls="searchTop"><i
                                 class="fa-solid fa-magnifying-glass"></i></a></li>
                     <li><a href="#"><i class="fa-regular fa-user"></i></a></li>
-                    <li><a href="my-cart.html"><i class="fa-solid fa-bag-shopping"></i></a></li>
+                    <li class="web-cart"><a href="my-cart.html"><i class="fa-solid fa-bag-shopping"></i></a></li>
+                    <li class="mob-cart"><a href="#" type="button" data-bs-toggle="offcanvas"
+                            data-bs-target="#offcanvasRight"><i class="fa-solid fa-bag-shopping"></i></a></li>
                 </ul>
             </div>
         </div>
@@ -170,7 +173,19 @@
     </header>
     <!-- header end -->
 
-
+    <!-- moblie-section -->
+    <section class="product-content about-content about-mobile">
+        <div class="container-fluid">
+            <div class="detail-head head-mobile d-flex align-items-center">
+                <p>Home</p>
+                <i class="fa-solid fa-greater-than"></i>
+                <p>Journal</p>
+                <i class="fa-solid fa-greater-than"></i>
+                <p>All Products</p>
+            </div>
+        </div>
+    </section>
+    <!-- moblie-section End-->
 
     <section class="product" style="--bgimg: url('../images/thankyoubg.png');">
         <div class="container">
@@ -188,7 +203,7 @@
 
     <section class="product-content">
         <div class="container-fluid">
-            <div class="detail-head d-flex align-items-center ms-3">
+            <div class="detail-head  web-head d-flex align-items-center ms-3">
                 <p>Home</p>
                 <i class="fa-solid fa-greater-than"></i>
                 <p>Journal</p>
@@ -203,36 +218,85 @@
                 <a href="#">Restore Masque</a>
                 <a href="#">Spray</a>
                 <div class="dropdown">
-                    <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                    <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1"
+                        data-bs-toggle="dropdown" aria-expanded="false">
                         Colors Collection
                     </button>
                     <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                      <li><a class="dropdown-item" href="#">Colors Collection</a></li>
-                      <li><a class="dropdown-item" href="#">Colors Collection</a></li>
-                      <li><a class="dropdown-item" href="#">Colors Collection</a></li>
+                        <li><a class="dropdown-item" href="#">Colors Collection</a></li>
+                        <li><a class="dropdown-item" href="#">Colors Collection</a></li>
+                        <li><a class="dropdown-item" href="#">Colors Collection</a></li>
                     </ul>
-                  </div>
+                </div>
             </div>
             <div class="sortby">
                 <a href="#">Sort by <img src="assets/images/arrow.png" class="img-fluid" alt=""></a>
             </div>
         </div>
+
+
+        <!-- Mobile Category -->
+        <section class="canva-category">
+            <div class="canava">
+                <button class="btn canvabutton" type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasBottom" aria-controls="offcanvasBottom">Sort by
+                    <i class="fa-solid fa-angle-down"></i>
+                </button>
+
+                <div class="offcanvas offcanvas-bottom" tabindex="-1" id="offcanvasBottom"
+                    aria-labelledby="offcanvasBottomLabel">
+
+                    <div class="offcanvas-body small">
+                        <button class="btn">Featured</button>
+                        <button class="btn">Best selling</button>
+                        <button class="btn">Alphabetically, A-Z</button>
+                        <button class="btn">Alphabetically, Z-A</button>
+                        <button class="btn">Price, low to high </button>
+                        <button class="btn">Price, high to low </button>
+                        <button class="btn">Date, old to new </button>
+                        <button class="btn">Date, new to old</button>
+                    </div>
+                </div>
+
+                <button class="btn canvabutton" type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasBottom" aria-controls="offcanvasBottom">Categories
+                    <i class="fa-solid fa-angle-down"></i>
+                </button>
+
+                <div class="offcanvas offcanvas-bottom" tabindex="-1" id="offcanvasBottom"
+                    aria-labelledby="offcanvasBottomLabel">
+
+                    <div class="offcanvas-body small">
+                        <button class="btn">Featured</button>
+                        <button class="btn">Best selling</button>
+                        <button class="btn">Alphabetically, A-Z</button>
+                        <button class="btn">Alphabetically, Z-A</button>
+                        <button class="btn">Price, low to high </button>
+                        <button class="btn">Price, high to low </button>
+                        <button class="btn">Date, old to new </button>
+                        <button class="btn">Date, new to old</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Mobile Category End-->
+
     </section>
 
 
-     <!-- Best Seller -->
+    <!-- Best Seller -->
     <section class="best-seller product-seller">
         <div class="container-fluid">
-        
+
             <div class="row pro-row">
                 <div class="col-lg-3 col-sm-6 col-6">
                     <div class="seller-card product-card">
                         <!-- style="--bg:#E9D69E;"  -->
                         <figure>
                             <div class="productImg">
-                            <img src="assets/images/homeproduct.png" class="img-fluid" alt="">
-                        </div>
-                            
+                                <img src="assets/images/homeproduct.png" class="img-fluid" alt="">
+                            </div>
+
                             <ul class="badge-group">
                                 <li>
                                     <p>Best<br>
@@ -265,7 +329,7 @@
                         <!-- style="--bg:#6FCFEB;" -->
                         <figure>
                             <img src="assets/images/homeproduct1.png" class="img-fluid" alt="">
-                           
+
                             <ul class="badge-group badge-group1">
                                 <li>
                                     <p>Best<br>
@@ -359,9 +423,9 @@
                         <!-- style="--bg:#E9D69E;"  -->
                         <figure>
                             <div class="productImg">
-                            <img src="assets/images/homeproduct.png" class="img-fluid" alt="">
-                        </div>
-                            
+                                <img src="assets/images/homeproduct.png" class="img-fluid" alt="">
+                            </div>
+
                             <ul class="badge-group">
                                 <li>
                                     <p>Best<br>
@@ -394,7 +458,7 @@
                         <!-- style="--bg:#6FCFEB;" -->
                         <figure>
                             <img src="assets/images/homeproduct1.png" class="img-fluid" alt="">
-                           
+
                             <ul class="badge-group badge-group1">
                                 <li>
                                     <p>Best<br>
@@ -488,9 +552,9 @@
                         <!-- style="--bg:#E9D69E;"  -->
                         <figure>
                             <div class="productImg">
-                            <img src="assets/images/homeproduct.png" class="img-fluid" alt="">
-                        </div>
-                            
+                                <img src="assets/images/homeproduct.png" class="img-fluid" alt="">
+                            </div>
+
                             <ul class="badge-group">
                                 <li>
                                     <p>Best<br>
@@ -523,7 +587,7 @@
                         <!-- style="--bg:#6FCFEB;" -->
                         <figure>
                             <img src="assets/images/homeproduct1.png" class="img-fluid" alt="">
-                           
+
                             <ul class="badge-group badge-group1">
                                 <li>
                                     <p>Best<br>
@@ -616,9 +680,9 @@
                         <!-- style="--bg:#E9D69E;"  -->
                         <figure>
                             <div class="productImg">
-                            <img src="assets/images/homeproduct.png" class="img-fluid" alt="">
-                        </div>
-                            
+                                <img src="assets/images/homeproduct.png" class="img-fluid" alt="">
+                            </div>
+
                             <ul class="badge-group">
                                 <li>
                                     <p>Best<br>
@@ -651,7 +715,7 @@
                         <!-- style="--bg:#6FCFEB;" -->
                         <figure>
                             <img src="assets/images/homeproduct1.png" class="img-fluid" alt="">
-                           
+
                             <ul class="badge-group badge-group1">
                                 <li>
                                     <p>Best<br>
@@ -758,77 +822,77 @@
     <!-- Footer -->
 
     <footer>
-    <div class="container-fluid">
-        <div class="row  justify-content-between pb-3">
-            <div class="col-xl-2 col-lg-3">
-                <a href="#" class="footerlogo"><img src="assets/images/footerlogo.png" class="img-fluid" alt=""></a>
+        <div class="container-fluid">
+            <div class="row  justify-content-between pb-3">
+                <div class="col-xl-2 col-lg-3">
+                    <a href="#" class="footerlogo"><img src="assets/images/footerlogo.png" class="img-fluid" alt=""></a>
 
-            </div>
-            <div class="col-xl-4 col-lg-5">
-                <h4>Subscribe to our newsletter</h4>
-                <form action="">
-                    <div class="form"><input type="text" class="form-control" placeholder="Enter your email here">
-                        <button class="btn">Submit <img src="assets/images/plane.png" class="ms-2" alt=""></button>
-                    </div>
+                </div>
+                <div class="col-xl-4 col-lg-5">
+                    <h4>Subscribe to our newsletter</h4>
+                    <form action="">
+                        <div class="form"><input type="text" class="form-control" placeholder="Enter your email here">
+                            <button class="btn">Submit <img src="assets/images/plane.png" class="ms-2" alt=""></button>
+                        </div>
 
-                    <label>
-                        <input type="checkbox"><span>By entering your email you confirm you have read the Privacy
-                            Policy
-                            and you agree to receive (just great) emails from Fler.</span>
-                    </label>
-                </form>
-            </div>
-            <div class="col-xl-4 col-lg-4">
-                <ul class="quicklink">
-                    <li><a href="#">About us</a></li>
-                    <li><a href="#">Shop</a></li>
-                    <li><a href="#">Journal</a></li>
-                    <li><a href="#">Ingredients</a></li>
-                    <li><a href="FAQ's.html">FAQ’s</a></li>
-                    <li><a href="#">Contact us</a></li>
-                    <li><a href="#">Login</a></li>
-                    <li><a href="distributor.html">Become a Distributor</a></li>
-                </ul>
-            </div>
-        </div>
-        <img src="assets/images/footervector.png" class="img-fluid wave-line" alt="">
-
-
-        <div class="row footer-bottom justify-content-between mt-5">
-            <div class="col-xl-2 col-lg-3">
-                <p class="copyright">© 2023 Oserth | All rights reserved</p>
-            </div>
-            <div class="col-xl-4 col-lg-5">
-                <div class="footer-payment d-flex justify-content-between">
-                    <p>Secure payments</p>
-
-                    <figure class="d-flex justify-content-between align-items-center">
-                        <img src="assets/images/paymentimg.png" alt="">
-                        <img src="assets/images/payment1.png" alt="">
-                        <img src="assets/images/payment2.png" alt="">
-                        <img src="assets/images/payment3.png" alt="">
-                        <img src="assets/images/payment4.png" alt="">
-                        <img src="assets/images/payment5.png" alt="">
-                        <img src="assets/images/payment6.png" alt="">
-                    </figure>
+                        <label>
+                            <input type="checkbox"><span>By entering your email you confirm you have read the Privacy
+                                Policy
+                                and you agree to receive (just great) emails from Fler.</span>
+                        </label>
+                    </form>
+                </div>
+                <div class="col-xl-4 col-lg-4">
+                    <ul class="quicklink">
+                        <li><a href="#">About us</a></li>
+                        <li><a href="#">Shop</a></li>
+                        <li><a href="#">Journal</a></li>
+                        <li><a href="#">Ingredients</a></li>
+                        <li><a href="FAQ's.html">FAQ’s</a></li>
+                        <li><a href="#">Contact us</a></li>
+                        <li><a href="#">Login</a></li>
+                        <li><a href="distributor.html">Become a Distributor</a></li>
+                    </ul>
                 </div>
             </div>
-            <div class="col-xl-4 col-lg-4">
-                <ul class="termlinks">
-                    <li><a href="#">terms & conditions</a></li>
-                    <li><a href="#">privacy policy</a></li>
-                    <li><a href="#">cookie policy</a></li>
-                </ul>
+            <img src="assets/images/footervector.png" class="img-fluid wave-line" alt="">
+
+
+            <div class="row footer-bottom justify-content-between mt-5">
+                <div class="col-xl-2 col-lg-3">
+                    <p class="copyright">© 2023 Oserth | All rights reserved</p>
+                </div>
+                <div class="col-xl-4 col-lg-5">
+                    <div class="footer-payment d-flex justify-content-between">
+                        <p>Secure payments</p>
+
+                        <figure class="d-flex justify-content-between align-items-center">
+                            <img src="assets/images/paymentimg.png" alt="">
+                            <img src="assets/images/payment1.png" alt="">
+                            <img src="assets/images/payment2.png" alt="">
+                            <img src="assets/images/payment3.png" alt="">
+                            <img src="assets/images/payment4.png" alt="">
+                            <img src="assets/images/payment5.png" alt="">
+                            <img src="assets/images/payment6.png" alt="">
+                        </figure>
+                    </div>
+                </div>
+                <div class="col-xl-4 col-lg-4">
+                    <ul class="termlinks">
+                        <li><a href="#">terms & conditions</a></li>
+                        <li><a href="#">privacy policy</a></li>
+                        <li><a href="#">cookie policy</a></li>
+                    </ul>
+                </div>
             </div>
         </div>
-    </div>
-</footer>
+    </footer>
     <!-- Footer End -->
 
 
-     <!-- Mobile navbar -->
+    <!-- Mobile navbar -->
 
-     <div class="offcanvas offcanvas-start" tabindex="-1" id="mobileNav" aria-labelledby="mobileNavLabel">
+    <div class="offcanvas offcanvas-start" tabindex="-1" id="mobileNav" aria-labelledby="mobileNavLabel">
         <div class="offcanvas-header">
             <!-- <h5 class="offcanvas-title" id="mobileNavLabel">Offcanvas</h5> -->
             <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
@@ -945,7 +1009,122 @@
         </div>
     </div>
 
-<!-- Mobile navbar End-->
+    <!-- Mobile navbar End-->
+
+
+    <!-- My Cart Mobile -->
+    <section class="mobilecart">
+        <!-- <button class="btn btn-primary" type="button"  data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight"
+        aria-controls="offcanvasRight">Toggle right offcanvas</button> -->
+
+        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+            <div class="offcanvas-header">
+
+                <h5 id="offcanvasRightLabel">Cart</h5>
+                <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"
+                    aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+                <div class="head">
+                    <img src="assets/images/cartheader.png" alt="">
+                    <p>User Name</p>
+                </div>
+
+
+                <div class="cart-deta">
+                    <div class="cart-data d-flex mb-4">
+                        <img src="assets/images/cartoil.png" alt="">
+                        <div class="cart-cont">
+                            <h4>Oserth Fortify</h4>
+                            <p>Smooth Shampoo 300ml</p>
+                        </div>
+                        <a href="#"><i class="fa-solid fa-x"></i></a>
+                    </div>
+
+                    <div class="cart-data d-flex mb-4">
+                        <img src="assets/images/cartoil.png" alt="">
+                        <div class="cart-cont">
+                            <h4>Oserth Fortify</h4>
+                            <p>Smooth Shampoo 300ml</p>
+                        </div>
+                        <a href="#"><i class="fa-solid fa-x"></i></a>
+                    </div>
+
+
+                    <div class="cart-data d-flex mb-4">
+                        <img src="assets/images/cartoil.png" alt="">
+                        <div class="cart-cont">
+                            <h4>Oserth Fortify</h4>
+                            <p>Smooth Shampoo 300ml</p>
+                        </div>
+                        <a href="#"><i class="fa-solid fa-x"></i></a>
+                    </div>
+
+                    <div class="cart-data d-flex mb-4">
+                        <img src="assets/images/cartoil.png" alt="">
+                        <div class="cart-cont">
+                            <h4>Oserth Fortify</h4>
+                            <p>Smooth Shampoo 300ml</p>
+                        </div>
+                        <a href="#"><i class="fa-solid fa-x"></i></a>
+                    </div>
+                </div>
+
+
+
+                <div class="cart-add">
+                    <div class="cart-data cart-data1 d-flex mb-4">
+                        <img src="assets/images/cartshampoo.png" alt="">
+                        <div class="cart-cont">
+                            <h4>Oserth Fortify</h4>
+                            <p>$ 54.00</p>
+                        </div>
+                        <div class="add-action">
+                            <button class="btn">add</button>
+                        </div>
+                    </div>
+
+                    <div class="cart-data cart-data1 d-flex mb-4">
+                        <img src="assets/images/cartshampoo.png" alt="">
+                        <div class="cart-cont">
+                            <h4>Oserth Fortify</h4>
+                            <p>$ 54.00</p>
+                        </div>
+                        <div class="add-action">
+                            <button class="btn">add</button>
+                        </div>
+                    </div>
+
+                    <div class="cart-data cart-data1 d-flex mb-4">
+                        <img src="assets/images/cartshampoo.png" alt="">
+                        <div class="cart-cont">
+                            <h4>Oserth Fortify</h4>
+                            <p>$ 54.00</p>
+                        </div>
+                        <div class="add-action">
+                            <button class="btn">add</button>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="cart-buttons">
+                    <p>Currency</p>
+                    <div class="buttons">
+                        <button class="btn">USD</button>
+                        <button class="btn">AED</button>
+                        <button class="btn">GBP</button>
+                    </div>
+                </div>
+
+                <div class="checkout">
+                    <button class="btn">Checkout . $200</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- My Cart Mobile End -->
+
 
 
 </body>
