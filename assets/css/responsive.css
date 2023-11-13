@@ -280,6 +280,16 @@
         font-size: 25px;
         margin-bottom: 40px;
     }
+    .thankcontent {
+        /* padding: 0 0 90px; */
+        background: url('../images/thankwave.png') no-repeat;
+        padding: 13.875rem 0 5rem;
+        margin-top: -6rem;
+        background-repeat: no-repeat;
+        background-position-x: center;
+        z-index: 1;
+        position: relative;
+    }
 }
 
 
@@ -960,10 +970,165 @@
     .contact .contact-icons {
         padding-bottom: 0px;
     }
+    .distribution {
+        padding: 3.875rem 0 3rem !important;
+    }
+
+    .thankcontent {
+        /* padding: 0 0 90px; */
+        background: url(../images/thankwave.png) no-repeat;
+        padding: 3.875rem 0 3rem;
+        margin-top: -1.4rem;
+        background-repeat: no-repeat;
+        background-position-x: center;
+        z-index: 1;
+        position: relative;
+        background-size: contain;    
+}
+.thank-details {
+    padding: 20px;
+}
+.thank-details h1 {
+    font-size: 40px;
+}
+.thank-details .para {
+    font-size: 18px;
+    margin-top: 20px;
+}
+.thank-details h3 {
+    padding: 32px;
+    font-size: 30px;
+    margin-top: 20px;
+}
+.thank-details p {
+    margin-top: 20px;
+    font-size: 12px;
+}
+.thank-details .btn {
+    padding: 11px 0px;
+    margin-top: 20px;
+    font-size: 15px;
+    width: 100%;
 }
 
+.thank-total {
+    padding: 30px 20px;
+}
+.thank-total h3 {
+    font-size: 30px;
+}
+.thank-total .sub {
+    margin-top: 18px;
+}
+.thank-total .sub p {
+    font-size: 18px;
+}
+.thank-total .sub span {
+    font-size: 16px;
+}
+.thank-total .wrap {
+    margin-top: 20px;
+}
+.thank-total .wrap> :nth-child(1) {
+    font-size: 18px;
+}
+.thank-total .wrap> :nth-child(2) {
+    font-size: 17px;
+}
+.thank-total .wrap span {
+    font-size: 17px;
+}
+.thank-total .grandtotal {
+    margin-top: 20px;
+}
+.thank-total .grandtotal p {
+    font-size: 20px;
+}
+.thank-total .grandtotal h4 {
+    font-size: 26px;
+}
+.thank-total .btn {
+    padding: 14px;
+    font-size: 14px;
+    margin-top: 20px;
+}
 
-
+.ingredients-banner h1 {
+    position: absolute;
+    top: 20%;
+    left: 40%;
+    transform: translate(-40%, -40%);
+    color: #323E48;
+    font-family: 'flatline';
+    font-size: 30px;
+    text-align: center;
+}
+.ingredients .ingredients-heading {
+    text-align: start;
+    padding: 20px 0 20px;
+}
+.ingredients .ingredients-heading h1{
+    font-size: 25px;
+    padding: 0 0px 0 0px !important;
+}
+.ingredients .web-head{
+    display: none !important;
+}
+.ingredients-circle {
+    padding: 0.75rem 0 !important;
+    /* gap: 72px; */
+}
+.ingredients-content {
+    padding: 20px 0 20px;
+}
+.ingredients-content .philosophy h3 {
+    font-size: 26px;
+}
+.ingredients-content .philosophy-para {
+    margin-top: 20px;
+    font-size: 15px;
+}
+.ingredients-content .philosophy-img {
+    height: 400px;
+    margin-top: 30px;
+}
+.ingredients-content .philosophy h4 {
+    font-size: 25px;
+    margin-top: 30px;
+}
+.ingredients-content .philosophy .efficacy-para {
+    font-size: 15px;
+    margin-top: 20px;
+}
+.ingredients-content .philosophy .para {
+    font-size: 15px;
+    margin: 20px 0 20px;
+}
+.ingredients-content .Ingredient-Glossary {
+    margin-top: 100px;
+}
+.a-section .col-lg-5, .col-lg-7 {
+    margin-top: 30px;
+}
+.ingredients-join{
+    display: block;
+}
+.ingredients-moblie{
+    display: block;
+}
+.faqs-heading p {
+    padding-top: 20px !important;
+    font-size: 15px !important;
+}
+.faqs-accordion .accordion-heading h1 {
+    font-size: 25px;
+    margin-bottom: 15px;
+    margin-top: 15px;
+}
+.faqs-accordion .accordion-body p {
+    font-size: 14px;
+}
+}
 
 
 

@@ -3813,78 +3813,7 @@ footer form label {
     }
 }
 
-/* @media (max-width: 767px) {
-    .cart-content .cart-details {
-        flex-direction: column;
-        text-align: center;
-    }
 
-    .cart-content .cart-details .cartaction {
-        margin-top: 20px;
-    }
-
-
-    .cart-total {
-        padding: 20px;
-    }
-
-    .cart-total h1 {
-        font-size: 30px;
-    }
-
-    .cart-total .cartsub {
-        flex-direction: column;
-        margin-top: 20px;
-        text-align: center;
-    }
-
-    .cart-total .cartsub> :nth-child(1),
-    .cart-total .cartsub> :nth-child(2) {
-        font-size: 20px;
-    }
-
-    .cart-total form {
-        flex-direction: column;
-        margin-top: 20px;
-    }
-
-    .cart-total form .form-control {
-        padding: 15px;
-        font-size: 16px;
-    }
-
-    .cart-total form .btn {
-        padding: 15px;
-        font-size: 16px;
-        margin-top: 20px;
-    }
-
-    .cart-total .grand-total {
-        margin-top: 20px;
-    }
-
-    .cart-total .grand-total p {
-        font-size: 25px;
-        margin-bottom: 10px;
-    }
-
-    .cart-total .grand-total h3 {
-        font-size: 40px;
-    }
-
-    .cart-total .proceed {
-        margin-top: 20px;
-    }
-
-    .cart-total .secure p {
-        margin-top: 30px;
-        font-size: 16px;
-    }
-
-    .cart-total .secure img {
-        width: 40px;
-    }
-} */
 
 
 /* My Cart End */
@@ -4012,7 +3941,7 @@ footer form label {
 
 .thank-total .sub p {
     color: #000;
-    font-size: 'Eina2-light';
+    font-family: 'Eina2-light';
     font-size: 25px;
 }
 
@@ -4419,6 +4348,12 @@ footer form label {
 
 
 /* Our Ingredients */
+.ingredients-join{
+    display: none;
+}
+.ingredients-moblie{
+    display: none;
+}
 .ingredients {
     padding: 7.4rem 0 3rem
 }
