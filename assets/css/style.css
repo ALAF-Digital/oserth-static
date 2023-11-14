@@ -494,7 +494,7 @@ header {
 
 .mobilecart .cart-cont h4 {
     color: #323E48;
-    font-size: 15px;
+    font-size: 14px;
     font-family: 'Eina2';
 }
 
@@ -2580,10 +2580,7 @@ footer form label {
 /* Journal End */
 
 @media (max-width:991px) {
-    .journal {
-        padding: 180px 0 60px !important;
-    }
-
+    
     .juournal-head {
         padding: 0% !important;
     }
